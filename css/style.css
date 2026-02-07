@@ -806,23 +806,38 @@ body {
 }
 
 .services-grid {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Tablet view: 2 columns */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile view: 1 column */
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
   background: linear-gradient(145deg, var(--dark-tertiary), var(--dark-secondary));
-  padding: 45px 35px;
-  border-radius: 25px;
+  padding: 32px 24px;              /* pehle 45px 35px tha – ab kam */
+  border-radius: 20px;             /* thoda subtle */
   text-align: center;
-  border: 2px solid transparent;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;   /* border halka */
+  transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .service-card::before {
@@ -848,10 +863,10 @@ body {
 }
 
 .service-icon {
-  font-size: 4.5rem;
-  margin-bottom: 25px;
+  font-size: 3.2rem;          /* size kam */
+  margin-bottom: 18px;        /* gap kam */
   display: inline-block;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
   position: relative;
   z-index: 1;
 }
@@ -862,9 +877,9 @@ body {
 
 .service-card h3 {
   color: var(--primary-gold);
-  font-size: 1.6rem;
-  margin-bottom: 18px;
-  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 700;
   position: relative;
   z-index: 1;
 }
