@@ -77,7 +77,7 @@
   .video-item { background: #111; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
   lite-youtube { background-position: center !important; background-size: cover !important; }
 </style>
-<style>.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; } .video-item { background: #111; border-radius: 12px; overflow: hidden; } lite-youtube { background-size: cover; background-position: center; aspect-ratio: 16/9; display: block; }</style></head>
+<style>.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; } .video-item { background: #111; border-radius: 12px; overflow: hidden; } lite-youtube { background-size: cover; background-position: center; aspect-ratio: 16/9; display: block; }</style><style>.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; } .video-item { background: #111; border-radius: 12px; overflow: hidden; } lite-youtube { background-size: cover; background-position: center; aspect-ratio: 16/9; display: block; cursor: pointer; }</style></head>
 
 <body>
 
@@ -379,56 +379,7 @@
   </div>
 
 <!-- ==================== VIDEO GALLERY SECTION ==================== -->
-<section class="section video-gallery-section" id="videos">
-  <div class="section-title" data-aos="fade-up">
-    <h2>Video Gallery</h2>
-    <div class="divider"></div>
-    <p>Watch our cinematic wedding films and highlights</p>
-  </div>
-
-  <div class="video-gallery-container">
-    
-    <!-- Video Category Filters -->
-    <div class="video-filters" data-aos="fade-up" data-aos-delay="100">
-      <button class="video-filter-btn active" data-video-filter="all">All Videos</button>
-      <button class="video-filter-btn" data-video-filter="wedding">Weddings</button>
-      <button class="video-filter-btn" data-video-filter="prewedding">Pre-Wedding</button>
-      <button class="video-filter-btn" data-video-filter="highlights">Highlights</button>
-    </div>
-
-    <!-- Video Grid -->
-    <div class="video-grid"><div class="video-item"><lite-youtube videoid="IIXEQuak3eQ" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Wedding Highlight</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="UlpVyJ5hi90" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>📸 Cinematic Pre-Wedding</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="czGnIOQnMEc" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💛 Haldi Ceremony</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="u1QQ3ElGCek" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Ring Ceremony</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="FMNRU8vR0lY" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>🎬 Ring Ceremony Teaser</h4><p>@Ps_weddingfilms</p></div></div></div>
-      </div>
-      <div class="video-item" data-video-category="prewedding">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>📸 Pre-Wedding Shoot</h4><p>Ps_weddingfilms</p></div>
-      </div>
-      <div class="video-item" data-video-category="highlights">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>🎬 Cinematic Teaser</h4><p>Ps_weddingfilms</p></div>
-      </div>
-      <div class="video-item" data-video-category="wedding">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>🚁 Drone Coverage</h4><p>Ps_weddingfilms</p></div>
-      </div>
-      <div class="video-item" data-video-category="prewedding">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>🌿 Nature Pre-Wedding</h4><p>Ps_weddingfilms</p></div>
-      </div>
-      <div class="video-item" data-video-category="wedding">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>💒 Traditional Wedding</h4><p>Ps_weddingfilms</p></div>
-      </div>
-    </div>
-
-    <div style="text-align: center; margin-top: 50px;" data-aos="fade-up">
-      <a href="https://www.youtube.com/@Ps_weddingfilms" target="_blank" class="btn btn-primary">
-        <span>🎥 Visit @Ps_weddingfilms on YouTube</span>
-      </a>
-    </div>
-
-  </div>
-</section>
+<section class="section video-gallery-section" id="videos"><div class="section-title"><h2>Video Gallery</h2><div class="divider"></div><p>Watch our cinematic wedding films</p></div><div class="video-gallery-container"><div class="video-grid"><div class="video-item"><lite-youtube videoid="IIXEQuak3eQ" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Wedding Highlight</h4><p>Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="UlpVyJ5hi90" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>📸 Pre-Wedding</h4><p>Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="czGnIOQnMEc" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💛 Haldi Ceremony</h4><p>Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="u1QQ3ElGCek" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Ring Ceremony</h4><p>Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="FMNRU8vR0lY" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>🎬 Ceremony Teaser</h4><p>Ps_weddingfilms</p></div></div></div></div></section>
 
   <!-- ==================== PRICING SECTION ==================== -->
   <section class="section pricing-section" id="pricing">
