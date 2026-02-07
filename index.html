@@ -77,7 +77,7 @@
   .video-item { background: #111; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
   lite-youtube { background-position: center !important; background-size: cover !important; }
 </style>
-</head>
+<style>.video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; } .video-item { background: #111; border-radius: 12px; overflow: hidden; } lite-youtube { background-size: cover; background-position: center; aspect-ratio: 16/9; display: block; }</style></head>
 
 <body>
 
@@ -397,11 +397,7 @@
     </div>
 
     <!-- Video Grid -->
-    <div class="video-grid">
-      <!-- Video IDs placeholder - Please update these with your real IDs -->
-      <div class="video-item" data-video-category="wedding">
-        <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
-        <div class="video-info"><h4>💍 Wedding Highlights</h4><p>Ps_weddingfilms</p></div>
+    <div class="video-grid"><div class="video-item"><lite-youtube videoid="IIXEQuak3eQ" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Wedding Highlight</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="UlpVyJ5hi90" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>📸 Cinematic Pre-Wedding</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="czGnIOQnMEc" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💛 Haldi Ceremony</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="u1QQ3ElGCek" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>💍 Ring Ceremony</h4><p>@Ps_weddingfilms</p></div></div><div class="video-item"><lite-youtube videoid="FMNRU8vR0lY" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube><div class="video-info"><h4>🎬 Ring Ceremony Teaser</h4><p>@Ps_weddingfilms</p></div></div></div>
       </div>
       <div class="video-item" data-video-category="prewedding">
         <lite-youtube videoid="u-aS9KJqbTo" params="modestbranding=1&rel=0&vq=hd1080"></lite-youtube>
