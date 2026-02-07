@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pawanstudio.shop/sitemap.xml
