@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Pawan Studio Belwai - Premium Photography & Videography | Sultanpur</title>
+  <meta name="description" content="Pawan Studio - 30+ years of capturing precious moments in Belwai, Sultanpur. Award-winning Wedding, Pre-Wedding, Events Photography with Drone & 4K Technology." />
+  <meta name="keywords" content="pawan studio, belwai studio, sultanpur photography, wedding photographer, pre-wedding shoot, drone photography, 4k videography" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pawan Studio - Award Winning Photography" />
+  <meta property="og:description" content="30+ years of excellence in professional photography & videography" />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Swiper CSS for Carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==================== PRELOADER ==================== -->
+  <div class="preloader" id="preloader">
+    <div class="loader"></div>
+    <div class="loader-text">PAWAN STUDIO</div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo-wrapper">
+        <img src="assets/logo.png" alt="Pawan Studio" class="logo-img">
+        <div class="logo-text-wrapper">
+          <div class="logo-text">PAWAN STUDIO</div>
+          <div class="logo-tagline">SINCE 1990s</div>
+        </div>
+      </a>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="nav-cta">Book Now</a></li>
+      </ul>
+
+      <div class="mobile-menu-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+    <!-- Animated Particles -->
+    <div class="hero-particles">
+      <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+      <div class="particle" style="left: 20%; animation-delay: 2s;"></div>
+      <div class="particle" style="left: 30%; animation-delay: 4s;"></div>
+      <div class="particle" style="left: 40%; animation-delay: 1s;"></div>
+      <div class="particle" style="left: 50%; animation-delay: 3s;"></div>
+      <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+      <div class="particle" style="left: 70%; animation-delay: 2.5s;"></div>
+      <div class="particle" style="left: 80%; animation-delay: 4.5s;"></div>
+      <div class="particle" style="left: 90%; animation-delay: 1.5s;"></div>
+    </div>
+
+    <div class="hero-content">
+      
+      <div class="hero-badge" data-aos="fade-down">
+        <span>✨</span>
+        <span>30+ YEARS OF EXCELLENCE</span>
+        <span>✨</span>
+      </div>
+      
+      <h1 data-aos="fade-up" data-aos-delay="100">PAWAN STUDIO</h1>
+      
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        WEDDING | PRE-WEDDING | EVENTS
+      </p>
+      
+      <p class="hero-tagline" data-aos="fade-up" data-aos-delay="300">
+        "Where Moments Become Timeless Memories"
+      </p>
+      
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+        <a href="#contact" class="btn btn-primary">
+          <span>📞 Book Your Shoot</span>
+        </a>
+        <a href="#portfolio" class="btn btn-secondary">
+          <span>📸 View Portfolio</span>
+        </a>
+        <a href="https://wa.me/918382905455" target="_blank" class="btn btn-primary">
+          <span>💬 WhatsApp Us</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="stat-number counter" data-target="30">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="stat-number counter" data-target="50">0</div>
+          <div class="stat-label">Team Members</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="700">
+          <div class="stat-number counter" data-target="5000">0</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="800">
+          <div class="stat-number counter" data-target="10000">0</div>
+          <div class="stat-label">Events Covered</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="section about-section" id="about">
+    <div class="section-title" data-aos="fade-up">
+      <h2>About Pawan Studio</h2>
+      <div class="divider"></div>
+      <p>Your Trusted Photography Partner for Over 30 Years</p>
+    </div>
+
+    <div class="about-content">
+      <div class="about-image-grid" data-aos="fade-right">
+        <div class="about-image-item">
+          <img src="assets/work1.jpg" alt="Wedding Photography">
+        </div>
+        <div class="about-image-item">
+          <img src="assets/work2.jpg" alt="Pre-Wedding Shoot">
+        </div>
+        <div class="about-image-item">
+          <img src="assets/work3.jpg" alt="Event Coverage">
+        </div>
+        <div class="about-image-item">
+          <img src="assets/work4.jpg" alt="Birthday Party">
+        </div>
+        <div class="about-image-badge">10,000+ Events</div>
+      </div>
+
+      <div class="about-text" data-aos="fade-left">
+        <h3>Capturing Your Precious Moments Since 1990s</h3>
+        
+        <p>
+          Pawan Studio has been the <strong>most trusted name in photography</strong> across Belwai Kadipur and Sultanpur for over <strong>three decades</strong>. With a passionate team of <strong>50+ professional photographers and videographers</strong>, we transform your special moments into timeless memories.
+        </p>
+
+        <p>
+          From grand wedding celebrations to intimate pre-wedding shoots, from vibrant cultural programs to milestone birthday parties, we bring <strong>creativity, expertise, and dedication</strong> to every project. Our state-of-the-art equipment including <strong>4K cameras, professional drones, and advanced editing suites</strong> ensures that every shot is picture-perfect.
+        </p>
+
+        <div class="about-features">
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+            <span class="icon">✓</span>
+            <h4>Expert Team</h4>
+            <p>50+ Skilled Professionals</p>
+          </div>
+
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+            <span class="icon">✓</span>
+            <h4>Latest Technology</h4>
+            <p>4K, Drone, Studio Setup</p>
+          </div>
+
+          <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+            <span class="icon">✓</span>
+            <h4>Proven Excellence</h4>
+            <p>10,000+ Successful Events</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="section services-section" id="services">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Premium Services</h2>
+      <div class="divider"></div>
+      <p>Professional photography & videography for every occasion</p>
+    </div>
+
+    <div class="services-grid">
+      
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-icon">💍</div>
+        <h3>Wedding Photography</h3>
+        <p>Capture every beautiful moment of your special day with cinematic photography, videography, and live coverage.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-icon">📸</div>
+        <h3>Pre-Wedding Shoot</h3>
+        <p>Create magical love stories at stunning locations with creative concepts and professional direction.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-icon">🎂</div>
+        <h3>Birthday Parties</h3>
+        <p>Preserve joyful birthday memories with complete photography and video coverage of your celebrations.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-icon">🎓</div>
+        <h3>School/College Events</h3>
+        <p>Complete coverage of educational events, annual functions, sports days, and graduation ceremonies.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-icon">🎭</div>
+        <h3>Cultural Programs</h3>
+        <p>Expert documentation of cultural events, festivals, religious ceremonies, and traditional functions.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-icon">🎬</div>
+        <h3>Video Editing</h3>
+        <p>Professional editing, color grading, effects, and post-production for stunning final videos.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-icon">📖</div>
+        <h3>Album Design</h3>
+        <p>Premium quality wedding albums with creative layouts, designs, and professional printing.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="service-icon">🚁</div>
+        <h3>Drone Shoot</h3>
+        <p>Stunning aerial photography and videography with professional drone equipment and pilots.</p>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-icon">📡</div>
+        <h3>Live Streaming</h3>
+        <p>Professional live streaming services for events, weddings, programs with HD quality.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO/GALLERY SECTION ==================== -->
+  <section class="section portfolio-section" id="portfolio">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Our Work Gallery</h2>
+      <div class="divider"></div>
+      <p>A glimpse of our creative excellence</p>
+    </div>
+
+    <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="wedding">Wedding</button>
+      <button class="filter-btn" data-filter="prewedding">Pre-Wedding</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+
+    <div class="portfolio-grid">
+      
+      <div class="portfolio-item" data-category="wedding" data-aos="zoom-in">
+        <img src="assets/gallery/wedding.jpg" alt="Wedding Photography">
+        <div class="portfolio-overlay">
+          <h4>Wedding Photography</h4>
+          <p>Royal Wedding Ceremony</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="prewedding" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/gallery/prewedding2.png" alt="Pre-Wedding Shoot">
+        <div class="portfolio-overlay">
+          <h4>Pre-Wedding Shoot</h4>
+          <p>Romantic Outdoor Session</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="events" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/gallery/birthday.png" alt="Birthday Party">
+        <div class="portfolio-overlay">
+          <h4>Birthday Party</h4>
+          <p>Grand Celebration</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="wedding" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/gallery/wedding3.jpg" alt="Wedding Ceremony">
+        <div class="portfolio-overlay">
+          <h4>Wedding Ceremony</h4>
+          <p>Traditional Function</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="events" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/gallery/wedding2.jpg" alt="Cultural Program">
+        <div class="portfolio-overlay">
+          <h4>Cultural Program</h4>
+          <p>Annual Function</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="prewedding" data-aos="zoom-in" data-aos-delay="500">
+        <img src="assets/gallery/prewedding1.png" alt="Pre-Wedding">
+        <div class="portfolio-overlay">
+          <h4>Pre-Wedding Shoot</h4>
+          <p>Sunset Photography</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 60px;" data-aos="fade-up">
+      <a href="#contact" class="btn btn-primary">
+        <span>📞 Book Your Shoot Today</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightboxClose">×</span>
+    <img src="" alt="Portfolio Image" id="lightboxImg">
+  </div>
+
+<!-- ==================== VIDEO GALLERY SECTION ==================== -->
+<section class="section video-gallery-section" id="videos">
+  <div class="section-title" data-aos="fade-up">
+    <h2>Video Gallery</h2>
+    <div class="divider"></div>
+    <p>Watch our cinematic wedding films and highlights</p>
+  </div>
+
+  <div class="video-gallery-container">
+    
+    <!-- Video Category Filters -->
+    <div class="video-filters" data-aos="fade-up" data-aos-delay="100">
+      <button class="video-filter-btn active" data-video-filter="all">All Videos</button>
+      <button class="video-filter-btn" data-video-filter="wedding">Weddings</button>
+      <button class="video-filter-btn" data-video-filter="prewedding">Pre-Wedding</button>
+      <button class="video-filter-btn" data-video-filter="highlights">Highlights</button>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="video-grid">
+      
+      <!-- Video 1 - Wedding -->
+      <div class="video-item" data-video-category="wedding" data-aos="zoom-in" data-aos-delay="100">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Wedding Video 1" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>💍 Royal Wedding Ceremony</h4>
+          <p>Cinematic Wedding Film - Sultanpur</p>
+        </div>
+      </div>
+
+      <!-- Video 2 - Pre-Wedding -->
+      <div class="video-item" data-video-category="prewedding" data-aos="zoom-in" data-aos-delay="150">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Pre-Wedding Video" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>📸 Pre-Wedding Love Story</h4>
+          <p>Romantic Pre-Wedding Shoot</p>
+        </div>
+      </div>
+
+      <!-- Video 3 - Highlights -->
+      <div class="video-item" data-video-category="highlights" data-aos="zoom-in" data-aos-delay="200">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Wedding Highlights" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🎬 Wedding Day Highlights</h4>
+          <p>Same Day Edit - Quick Preview</p>
+        </div>
+      </div>
+
+      <!-- Video 4 - Wedding -->
+      <div class="video-item" data-video-category="wedding" data-aos="zoom-in" data-aos-delay="250">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Drone Wedding" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🚁 Drone Wedding Coverage</h4>
+          <p>Aerial Cinematography</p>
+        </div>
+      </div>
+
+      <!-- Video 5 - Pre-Wedding -->
+      <div class="video-item" data-video-category="prewedding" data-aos="zoom-in" data-aos-delay="300">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Pre-Wedding Nature" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🌿 Nature Pre-Wedding Shoot</h4>
+          <p>Outdoor Location Shoot</p>
+        </div>
+      </div>
+
+      <!-- Video 6 - Highlights -->
+      <div class="video-item" data-video-category="highlights" data-aos="zoom-in" data-aos-delay="350">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Event Highlights" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🎉 Cultural Event Highlights</h4>
+          <p>Festival Coverage</p>
+        </div>
+      </div>
+
+      <!-- Video 7 - Wedding -->
+      <div class="video-item" data-video-category="wedding" data-aos="zoom-in" data-aos-delay="400">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Traditional Wedding" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>💒 Traditional Wedding Ceremony</h4>
+          <p>Complete Wedding Coverage</p>
+        </div>
+      </div>
+
+      <!-- Video 8 - Pre-Wedding -->
+      <div class="video-item" data-video-category="prewedding" data-aos="zoom-in" data-aos-delay="450">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Sunset Pre-Wedding" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🌅 Sunset Romance</h4>
+          <p>Golden Hour Photography</p>
+        </div>
+      </div>
+
+      <!-- Video 9 - Highlights -->
+      <div class="video-item" data-video-category="highlights" data-aos="zoom-in" data-aos-delay="500">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/u-aS9KJqbTo" 
+                  title="Birthday Party" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen 
+                  loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-info">
+          <h4>🎂 Birthday Party Coverage</h4>
+          <p>Kids Celebration Moments</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View More Button -->
+    <div style="text-align: center; margin-top: 50px;" data-aos="fade-up">
+      <a href="https://www.youtube.com/@pawanstudiobelwai" target="_blank" class="btn btn-primary">
+        <span>🎥 View All Videos on YouTube</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==================== PRICING SECTION ==================== -->
+  <section class="section pricing-section" id="pricing">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Pricing Packages</h2>
+      <div class="divider"></div>
+      <p>Affordable packages designed for your needs</p>
+    </div>
+
+    <div class="pricing-grid">
+      
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Basic Package</h3>
+        <div class="pricing-price">₹15,000</div>
+        <div class="pricing-duration">Starting Price</div>
+        <ul class="pricing-features">
+          <li>1 Professional Photographer</li>
+          <li>4-6 Hours Coverage</li>
+          <li>200+ Edited Photos</li>
+          <li>Online Gallery</li>
+          <li>Basic Video Highlights</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">
+          <span>Book Now</span>
+        </a>
+      </div>
+
+      <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+        <div class="pricing-badge">MOST POPULAR</div>
+        <h3>Premium Package</h3>
+        <div class="pricing-price">₹35,000</div>
+        <div class="pricing-duration">Starting Price</div>
+        <ul class="pricing-features">
+          <li>2 Professional Photographers</li>
+          <li>Full Day Coverage</li>
+          <li>500+ Edited Photos</li>
+          <li>Cinematic Video</li>
+          <li>Drone Shoot</li>
+          <li>Premium Album</li>
+          <li>Online Gallery</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">
+          <span>Book Now</span>
+        </a>
+      </div>
+
+      <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>Luxury Package</h3>
+        <div class="pricing-price">₹75,000</div>
+        <div class="pricing-duration">Starting Price</div>
+        <ul class="pricing-features">
+          <li>Full Professional Team</li>
+          <li>Complete Event Coverage</li>
+          <li>1000+ Edited Photos</li>
+          <li>4K Cinematic Videos</li>
+          <li>Drone Coverage</li>
+          <li>Live Streaming</li>
+          <li>Luxury Photo Albums</li>
+          <li>Pre-Wedding Shoot</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">
+          <span>Book Now</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; color: var(--gray-text);" data-aos="fade-up">
+      <p style="font-size: 1.1rem;">📞 Call us for custom packages: <a href="tel:8382905455" style="color: var(--primary-gold); text-decoration: none; font-weight: 700;">+91 8382905455</a></p>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Client Testimonials</h2>
+      <div class="divider"></div>
+      <p>What our happy clients say about us</p>
+    </div>
+
+    <div class="testimonials-container">
+      <div class="swiper testimonials-swiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <div class="testimonial-text">
+                "Pawan Studio ne hamari shaadi ko yaadgaar bana diya! Professional team aur beautiful photography. Drone shoot amazing tha. Highly recommended for wedding photography!"
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">R</div>
+                <div class="testimonial-info">
+                  <h4>Rajesh Kumar</h4>
+                  <p>Wedding Client, Sultanpur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <div class="testimonial-text">
+                "Best pre-wedding shoot experience! Creative team, amazing locations aur perfect direction. Photos bilkul professional aye. Thank you Pawan Studio team!"
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">P</div>
+                <div class="testimonial-info">
+                  <h4>Priya Sharma</h4>
+                  <p>Pre-Wedding Client, Lucknow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <div class="testimonial-text">
+                "Hamari school ki annual function ki photography bahut achhi hui. Professional service, timely delivery aur affordable price. Will definitely book again!"
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">V</div>
+                <div class="testimonial-info">
+                  <h4>Vikas Mishra</h4>
+                  <p>Event Organizer, Belwai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <div class="testimonial-text">
+                "Excellent drone shoot service! Unique angles, beautiful cinematography aur professional output. 30+ years ka experience clearly dikhta hai. Superb work!"
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">A</div>
+                <div class="testimonial-info">
+                  <h4>Amit Yadav</h4>
+                  <p>Corporate Client, Sultanpur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+              <div class="testimonial-text">
+                "Meri beti ke birthday party ko Pawan Studio ne wonderfully capture kiya. Album bhi beautiful bani. Team bahut cooperative aur professional hai. Highly satisfied!"
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">S</div>
+                <div class="testimonial-info">
+                  <h4>Sunita Devi</h4>
+                  <p>Birthday Party Client</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTAGRAM SECTION ==================== -->
+  <section class="section instagram-section" id="instagram">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Follow Us on Instagram</h2>
+      <div class="divider"></div>
+      <p>Stay updated with our latest work & behind the scenes</p>
+    </div>
+
+    <div class="instagram-container">
+      
+      <div class="instagram-header" data-aos="fade-up" data-aos-delay="100">
+        <div class="insta-profile">
+          <div class="insta-avatar">
+            <img src="assets/logo.png" alt="Pawan Studio Instagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+          </div>
+          <div class="insta-info">
+            <h3>@pawanstudiobelwai</h3>
+            <p>📸 Professional Photography & Videography<br>
+            📍 Belwai Kadipur, Sultanpur<br>
+            💍 Weddings | Events | Pre-Wedding</p>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/pawanstudiobelwai" target="_blank" class="btn btn-primary">
+          <span>📸 Follow on Instagram</span>
+        </a>
+      </div>
+
+      <div class="instagram-grid">
+        
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/gallery/wedding.jpg" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 245</span>
+              <span>💬 12</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="150">
+          <img src="assets/gallery/prewedding2.png" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 189</span>
+              <span>💬 8</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/gallery/birthday.png" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 156</span>
+              <span>💬 6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="250">
+          <img src="assets/gallery/wedding3.jpg" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 312</span>
+              <span>💬 15</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/gallery/wedding2.jpg" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 278</span>
+              <span>💬 11</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="insta-post" data-aos="zoom-in" data-aos-delay="350">
+          <img src="assets/gallery/prewedding1.png" alt="Instagram Post" loading="lazy">
+          <div class="insta-overlay">
+            <div class="insta-stats">
+              <span>❤️ 198</span>
+              <span>💬 9</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- ==================== TEAM SECTION ==================== -->
+<section class="section team-section" id="team">
+  <div class="section-title" data-aos="fade-up">
+    <h2>Our Expert Team</h2>
+    <div class="divider"></div>
+    <p>Meet the talented professionals behind every shot</p>
+  </div>
+
+  <div class="team-container">
+    
+    <!-- Team Member 1 - Ranjeet Gupta -->
+    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+      <div class="team-image">
+        <img src="assets/team/member1.jpg" 
+             alt="Ranjeet Gupta" 
+             onerror="this.src='https://ui-avatars.com/api/?name=Ranjeet+Gupta&size=400&background=E63946&color=fff&bold=true'">
+        <div class="team-social">
+          <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+          <a href="tel:8382905455" title="Call">📞</a>
+        </div>
+      </div>
+      <div class="team-info">
+        <h3>Ranjeet Gupta</h3>
+        <p class="team-role">Founder & Lead Photographer</p>
+        <p class="team-desc">30+ years experience in wedding & event photography</p>
+      </div>
+    </div>
+
+    <!-- Team Member 2 - Rahul Sharma -->
+    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+      <div class="team-image">
+        <img src="assets/team/member2.jpg" 
+             alt="Rahul Sharma" 
+             onerror="this.src='https://ui-avatars.com/api/?name=Rahul+Sharma&size=400&background=FFD700&color=000&bold=true'">
+        <div class="team-social">
+          <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+          <a href="tel:8382905455" title="Call">📞</a>
+        </div>
+      </div>
+      <div class="team-info">
+        <h3>Rahul Sharma</h3>
+        <p class="team-role">Drone Specialist</p>
+        <p class="team-desc">Expert in aerial cinematography & drone operations</p>
+      </div>
+    </div>
+
+    <!-- Team Member 3 - Juhi -->
+    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+      <div class="team-image">
+        <img src="assets/team/member3.jpg" 
+             alt="Juhi" 
+             onerror="this.src='https://ui-avatars.com/api/?name=Juhi&size=400&background=E63946&color=fff&bold=true'">
+        <div class="team-social">
+          <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+          <a href="tel:8382905455" title="Call">📞</a>
+        </div>
+      </div>
+      <div class="team-info">
+        <h3>Juhi</h3>
+        <p class="team-role">Senior Video Editor</p>
+        <p class="team-desc">Specialized in cinematic editing & color grading</p>
+      </div>
+    </div>
+
+    <!-- Team Member 4 - Shivam Gupta -->
+    <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+      <div class="team-image">
+        <img src="assets/team/member4.jpg" 
+             alt="Shivam Gupta" 
+             onerror="this.src='https://ui-avatars.com/api/?name=Shivam+Gupta&size=400&background=FFD700&color=000&bold=true'">
+        <div class="team-social">
+          <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+          <a href="tel:8382905455" title="Call">📞</a>
+        </div>
+      </div>
+      <div class="team-info">
+        <h3>Shivam Gupta</h3>
+        <p class="team-role">Cinematographer</p>
+        <p class="team-desc">Creative storytelling through cinematic videography</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ==================== BLOG SECTION ==================== -->
+  <section class="section blog-section" id="blog">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Latest News & Tips</h2>
+      <div class="divider"></div>
+      <p>Photography insights, tips & our latest work</p>
+    </div>
+
+    <div class="blog-container">
+      
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-image">
+          <img src="assets/blog/blog1.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/wedding.jpg'">
+          <div class="blog-category">Wedding Tips</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 15 Jan 2025</span>
+            <span>👤 Pawan Studio</span>
+          </div>
+          <h3>Top 10 Wedding Photography Poses for 2025</h3>
+          <p>Discover the most trending and timeless wedding photography poses that will make your wedding album unforgettable...</p>
+          <a href="#blog" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-image">
+          <img src="assets/blog/blog2.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/prewedding2.png'">
+          <div class="blog-category">Locations</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 10 Jan 2025</span>
+            <span>👤 Pawan Studio</span>
+          </div>
+          <h3>Best Pre-Wedding Shoot Locations in Sultanpur</h3>
+          <p>Explore the most beautiful and photogenic locations around Sultanpur perfect for your pre-wedding photoshoot...</p>
+          <a href="#blog" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-image">
+          <img src="assets/blog/blog3.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/wedding3.jpg'">
+          <div class="blog-category">Behind The Scenes</div>
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span>📅 5 Jan 2025</span>
+            <span>👤 Pawan Studio</span>
+          </div>
+          <h3>Behind The Scenes: Royal Wedding Coverage</h3>
+          <p>Take a peek into how we captured this magnificent royal wedding with our team of 50+ professionals...</p>
+          <a href="#blog" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 50px;" data-aos="fade-up">
+      <a href="#blog" class="btn btn-secondary">
+        <span>📰 View All Articles</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== AWARDS SECTION ==================== -->
+  <section class="section awards-section" id="awards">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Awards & Recognition</h2>
+      <div class="divider"></div>
+      <p>Celebrating 30+ years of excellence</p>
+    </div>
+
+    <div class="awards-container">
+      
+      <div class="award-card" data-aos="flip-left" data-aos-delay="100">
+        <div class="award-icon">🏆</div>
+        <h3>Best Wedding Photography</h3>
+        <p>Sultanpur Photography Awards 2024</p>
+      </div>
+
+      <div class="award-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="award-icon">⭐</div>
+        <h3>30+ Years Excellence</h3>
+        <p>Serving Since 1990s</p>
+      </div>
+
+      <div class="award-card" data-aos="flip-left" data-aos-delay="300">
+        <div class="award-icon">🎖️</div>
+        <h3>10,000+ Events Milestone</h3>
+        <p>Successfully Completed 2023</p>
+      </div>
+
+      <div class="award-card" data-aos="flip-left" data-aos-delay="400">
+        <div class="award-icon">💎</div>
+        <h3>Premium Quality Award</h3>
+        <p>UP Photography Association 2024</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section class="section faq-section" id="faq">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Frequently Asked Questions</h2>
+      <div class="divider"></div>
+      <p>Common questions about our services</p>
+    </div>
+
+    <div class="faq-container">
+      
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-question">
+          <span>Kya aap advance booking accept karte hain?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Haan bilkul! Hum 6 months advance tak booking accept karte hain. Wedding season mein jaldi book karna better rahta hai kyunki dates jaldi fill ho jati hain. 25-30% advance payment se booking confirm hoti hai.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="faq-question">
+          <span>Photos aur videos kab milte hain?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Normal events ke edited photos 10-15 days mein mil jate hain. Wedding photography complete 20-30 days mein deliver hoti hai. Cinematic videos 30-45 days lete hain kyunki editing time lagti hai. Same day highlights bhi available hain.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-question">
+          <span>Drone shoot ke liye extra charges hain?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Premium aur Luxury packages mein drone shoot included hai. Basic package mein drone shoot ke liye ₹5,000-8,000 extra charge hota hai. Weather aur location permission ke according final price decide hoti hai.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+        <div class="faq-question">
+          <span>Bahar ke events cover karte ho?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Haan, hum Sultanpur district ke alawa nearby cities jaise Lucknow, Rae Bareli, Amethi, Pratapgarh mein bhi shoot karte hain. Outstation events ke liye travel aur accommodation charges alag se lagti hain.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-question">
+          <span>Album design mein kitna time lagta hai?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Premium quality wedding album design aur printing mein 45-60 days lagta hai. Hum 3-4 design options dikhate hain aur aapki choice ke according final album banate hain. Rush delivery bhi available hai extra charges ke saath.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+        <div class="faq-question">
+          <span>Live streaming service kaise kaam karti hai?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Hum YouTube, Facebook ya private platform par live streaming karte hain. HD quality streaming ke saath professional audio setup bhi include hai. Packages ₹15,000 se start hote hain. Internet connectivity check karke final confirmation dete hain.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section contact-section" id="contact">
+    <div class="section-title" data-aos="fade-up">
+      <h2>Get In Touch</h2>
+      <div class="divider"></div>
+      <p>Book your shoot today or visit our studio</p>
+    </div>
+
+    <div class="contact-container">
+      
+      <div class="contact-info-box" data-aos="fade-right">
+        <h3>Contact Information</h3>
+        
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-details">
+            <strong>Studio Address</strong>
+            <p>Pawan Studio<br>Belwai Kadipur, Sultanpur<br>Uttar Pradesh - 222101</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-details">
+            <strong>Phone & WhatsApp</strong>
+            <a href="tel:8382905455">+91 8382905455</a>
+            <a href="https://wa.me/918382905455" target="_blank" class="btn btn-primary" style="display: inline-flex; margin-top: 10px; padding: 10px 20px; font-size: 0.9rem;">
+              <span>💬 Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-details">
+            <strong>Email Address</strong>
+            <a href="mailto:belwaipawanstudio@gmail.com">belwaipawanstudio@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📸</div>
+          <div class="contact-details">
+            <strong>Follow Us on Instagram</strong>
+            <a href="https://www.instagram.com/pawanstudiobelwai" target="_blank" style="background: linear-gradient(135deg, #E1306C, #C13584); color: white; padding: 10px 20px; border-radius: 50px; display: inline-block; margin-top: 10px; text-decoration: none; font-weight: 600;">
+              @pawanstudiobelwai
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-form-box" data-aos="fade-left">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm">
+          
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Required *</label>
+            <select id="service" name="service" required>
+              <option value="">Select Service</option>
+              <option value="wedding">Wedding Photography</option>
+              <option value="prewedding">Pre-Wedding Shoot</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="event">School/College Event</option>
+              <option value="cultural">Cultural Program</option>
+              <option value="drone">Drone Shoot</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your event..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            📩 Send Message
+          </button>
+
+        </form>
+      </div>
+
+      <div class="map-container" data-aos="fade-up">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.1415856122612!2d82.67962762686899!3d26.17824912564458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3990591b30d02557%3A0xf8da1014150391fe!2sPolice%20Chowki%20Belvai!5e0!3m2!1sen!2sin!4v1761407279955!5m2!1sen!2sin"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      
+      <div class="footer-logo">PAWAN STUDIO</div>
+      <div class="footer-tagline">"Capturing Your Precious Moments Since 1990s"</div>
+      
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#videos">Videos</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#team">Team</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://wa.me/918382905455" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+        <a href="https://www.instagram.com/pawanstudiobelwai" target="_blank" class="social-icon" title="Instagram">📸</a>
+        <a href="tel:8382905455" class="social-icon" title="Call">📞</a>
+        <a href="mailto:belwaipawanstudio@gmail.com" class="social-icon" title="Email">📧</a>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>© 2025 <strong>Pawan Studio</strong>. All Rights Reserved.</p>
+        <p style="margin-top: 10px;">Belwai Kadipur, Sultanpur, Uttar Pradesh - 222101</p>
+        <p style="margin-top: 15px;">Made with <span class="heart">❤️</span> for Capturing Memories</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING BUTTONS ==================== -->
+  
+  <!-- WhatsApp Floating Button with SVG Icon -->
+  <a href="https://wa.me/918382905455" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" style="width: 32px; height: 32px; fill: white;">
+      <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-5.245 1.407 1.415-5.267-0.32-0.527c-1.294-2.154-1.978-4.629-1.978-7.185 0-7.384 6.007-13.391 13.391-13.391s13.391 6.007 13.391 13.391-6.007 13.391-13.391 13.391zM21.697 18.257c-0.244-0.122-1.445-0.713-1.668-0.794s-0.387-0.122-0.549 0.122c-0.162 0.244-0.631 0.794-0.773 0.957s-0.285 0.183-0.529 0.061c-0.244-0.122-1.031-0.38-1.964-1.212-0.726-0.647-1.216-1.446-1.358-1.69s-0.015-0.376 0.107-0.498c0.11-0.108 0.244-0.285 0.366-0.427s0.162-0.244 0.244-0.407c0.081-0.162 0.041-0.305-0.020-0.427s-0.549-1.323-0.752-1.811c-0.198-0.475-0.4-0.411-0.549-0.419-0.142-0.007-0.305-0.009-0.467-0.009s-0.427 0.061-0.651 0.305c-0.224 0.244-0.854 0.835-0.854 2.036s0.875 2.362 0.997 2.524c0.122 0.162 1.72 2.623 4.164 3.678 0.582 0.251 1.036 0.401 1.39 0.513 0.584 0.186 1.116 0.16 1.537 0.097 0.469-0.070 1.445-0.591 1.648-1.162s0.203-1.060 0.142-1.162c-0.061-0.102-0.223-0.163-0.467-0.285z"></path>
+    </svg>
+  </a>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">↑</div>
+
+  <!-- ==================== EXTERNAL SCRIPTS ==================== -->
+  
+  <!-- AOS Animation Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
