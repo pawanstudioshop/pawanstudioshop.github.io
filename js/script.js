@@ -108,23 +108,24 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// ========== SMOOTH SCROLLING ==========
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (!href || href === '#') return;
+// ========== SMOOTH SCROLLING (disabled, using CSS scroll-behavior) ==========
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function(e) {
+//     const href = this.getAttribute('href');
+//     if (!href || href === '#') return;
+//
+//     const target = document.querySelector(href);
+//     if (!target) return;
+//
+//     e.preventDefault();
+//     const offsetTop = target.offsetTop - 80;
+//     window.scrollTo({
+//       top: offsetTop,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
 
-    const target = document.querySelector(href);
-    if (!target) return;
-
-    e.preventDefault();
-    const offsetTop = target.offsetTop - 80;
-    window.scrollTo({
-      top: offsetTop,
-      behavior: 'smooth'
-    });
-  });
-});
 
 // ========== PORTFOLIO FILTER ==========
 const filterBtns = document.querySelectorAll('.filter-btn');

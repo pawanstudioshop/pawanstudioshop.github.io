@@ -2194,3 +2194,7 @@ body {
     font-size: 2rem;
   }
 }
+
+section[id] {
+  scroll-margin-top: 90px; /* approx navbar height */
+}
