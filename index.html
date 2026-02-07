@@ -34,8 +34,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <link rel="stylesheet" href="css/style.min.css">
+<style>.nav-brand, .nav-brand span, .nav-links a { text-decoration: none; }</style></head>
 
 <body>
 
@@ -47,29 +47,10 @@
 
   <!-- ==================== NAVBAR ==================== -->
   <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#home" class="logo-wrapper">
-        <img loading="lazy" src="assets/optimized/logo.webp" alt="Pawan Studio" class="logo-img">
-        <div class="logo-text-wrapper">
-          <div class="logo-text">PAWAN STUDIO</div>
-          <div class="logo-tagline">SINCE 1990s</div>
-        </div>
-      </a>
-      
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact" class="nav-cta">Book Now</a></li>
-      </ul>
-
-      <div class="mobile-menu-toggle" id="mobileToggle">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" style="display:flex; align-items:center; gap:15px; text-decoration:none;"><div style="background:linear-gradient(135deg, #ffffff, #e0e0e0); padding:6px; border-radius:12px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 15px rgba(255,215,0,0.5); border:1px solid rgba(255,215,0,0.3);"><img src="assets/optimized/logo.webp" alt="Logo" style="height:45px; width:45px; object-fit:contain; border-radius:8px;"></div><div><span style="display:block; font-size:1.4rem; font-weight:800; background:linear-gradient(135deg, #FFD700, #E63946); -webkit-background-clip:text; -webkit-text-fill-color:transparent; line-height:1; text-decoration:none;">PAWAN STUDIO</span><span style="display:block; font-size:0.7rem; color:#aaa; letter-spacing:1px; margin-top:4px; text-decoration:none;">Since 1990s</span></div></a>
+      <ul class="nav-links" id="navLinks"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#portfolio">Gallery</a></li><li><a href="#videos">Videos</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li><li><a href="tel:8382905455" class="btn btn-primary" style="padding:10px 25px; border-radius:50px; background:linear-gradient(135deg, #E63946, #FFD700); border:none; color:#000; font-weight:bold;">📞 CALL</a></li></ul>
+      <div class="mobile-toggle" id="mobileToggle">
         <span></span>
         <span></span>
         <span></span>
@@ -1176,42 +1157,7 @@
   </section>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="footer">
-    <div class="footer-content">
-      
-      <div class="footer-logo">PAWAN STUDIO</div>
-      <div class="footer-tagline">"Capturing Your Precious Moments Since 1990s"</div>
-      
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#videos">Videos</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#team">Team</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="footer-social">
-        <a href="https://wa.me/918382905455" target="_blank" class="social-icon" title="WhatsApp">💬</a>
-        <a href="https://www.instagram.com/pawanstudiobelwai" target="_blank" class="social-icon" title="Instagram">📸</a>
-        <a href="tel:8382905455" class="social-icon" title="Call">📞</a>
-        <a href="mailto:belwaipawanstudio@gmail.com" class="social-icon" title="Email">📧</a>
-      </div>
-
-      <div class="footer-divider"></div>
-
-      <div class="footer-bottom">
-        <p>© 2025 <strong>Pawan Studio</strong>. All Rights Reserved.</p>
-        <p style="margin-top: 10px;">Belwai Kadipur, Sultanpur, Uttar Pradesh - 222101</p>
-        <p style="margin-top: 15px;">Made with <span class="heart">❤️</span> for Capturing Memories</p>
-      </div>
-
-    </div>
-  </footer>
+  <footer class="footer"><div class="footer-content"><p>© 2026 <strong>Pawan Studio</strong>. All Rights Reserved.</p></div></footer>
 
   <!-- ==================== FLOATING BUTTONS ==================== -->
   
@@ -1228,13 +1174,13 @@
   <!-- ==================== EXTERNAL SCRIPTS ==================== -->
   
   <!-- AOS Animation Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   
   <!-- Custom JavaScript -->
-  <script src="js/script.js"></script>
+  <script defer src="js/script.js"></script>
 
 </body>
 </html>
