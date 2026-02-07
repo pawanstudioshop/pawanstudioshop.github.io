@@ -75,6 +75,15 @@ body {
   background-clip: text;
   letter-spacing: 3px;
   animation: pulse 1.5s ease-in-out infinite;
+  text-align: center;
+}
+
+.loader-subtext {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  color: var(--gray-text);
 }
 
 @keyframes pulse {
@@ -195,6 +204,14 @@ body {
 }
 
 .nav-links a:hover::before {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--primary-gold);
+}
+
+.nav-links a.active::before {
   width: 100%;
 }
 
@@ -405,7 +422,7 @@ body {
   color: var(--light-text);
   margin-bottom: 18px;
   font-weight: 700;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   opacity: 0.9;
 }
@@ -571,7 +588,7 @@ body {
   40% {
     transform: translateX(-50%) translateY(-10px);
   }
-  60% {
+  60 {
     transform: translateX(-50%) translateY(-5px);
   }
 }
@@ -627,6 +644,11 @@ body {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.7;
+}
+
+.brand-subline {
+  font-size: 0.95rem;
+  color: var(--gray-text);
 }
 
 /* ==================== ABOUT SECTION ==================== */
@@ -765,6 +787,16 @@ body {
   .about-image-grid {
     max-width: 500px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-image-badge {
+    font-size: 1rem;
+    padding: 12px 20px;
+    top: auto;
+    bottom: 10px;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -2011,18 +2043,6 @@ body {
 
 .footer-bottom strong {
   color: var(--primary-gold);
-}
-
-.footer-bottom .heart {
-  color: var(--primary-red);
-  animation: heartbeat 1.5s infinite;
-  display: inline-block;
-}
-
-@keyframes heartbeat {
-  0%, 100% { transform: scale(1); }
-  25% { transform: scale(1.2); }
-  50% { transform: scale(1); }
 }
 
 /* ==================== FLOATING BUTTONS ==================== */

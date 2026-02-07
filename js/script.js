@@ -1,21 +1,23 @@
 /* ==================== PAWAN STUDIO - JAVASCRIPT ==================== */
 
 // ========== INITIALIZE AOS (Animate On Scroll) ==========
-AOS.init({
-  duration: 1000,
-  once: true,
-  offset: 100,
-  easing: 'ease-out-cubic'
-});
+if (window.AOS) {
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100,
+    easing: 'ease-out-cubic'
+  });
+}
 
 // ========== PRELOADER ==========
 window.addEventListener('load', function() {
-  setTimeout(function() {
-    document.getElementById('preloader').classList.add('hidden');
-    
-    // Counter animation start after preloader
-    setTimeout(startCounters, 500);
-  }, 1500);
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.classList.add('hidden');
+  }
+  // Counter animation start shortly after preloader hides
+  setTimeout(startCounters, 300);
 });
 
 // ========== COUNTER ANIMATION ==========
@@ -23,9 +25,14 @@ function startCounters() {
   const counters = document.querySelectorAll('.counter');
   
   counters.forEach(counter => {
-    const target = parseInt(counter.getAttribute('data-target'));
+    const target = parseInt(counter.getAttribute('data-target'), 10);
+    if (isNaN(target)) return;
+
     let count = 0;
-    const increment = target / 100;
+    const duration = 2000; // ms
+    const fps = 60;
+    const totalSteps = Math.round((duration / 1000) * fps);
+    const increment = target / totalSteps;
     
     const timer = setInterval(() => {
       count += increment;
@@ -35,7 +42,7 @@ function startCounters() {
       } else {
         counter.textContent = Math.ceil(count);
       }
-    }, 20);
+    }, duration / totalSteps);
   });
 }
 
@@ -43,18 +50,26 @@ function startCounters() {
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
 
-if (mobileToggle) {
+if (mobileToggle && navLinks) {
   mobileToggle.addEventListener('click', function() {
     navLinks.classList.toggle('active');
     mobileToggle.classList.toggle('active');
+
+    if (navLinks.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   });
 }
 
 // Close menu on link click
 document.querySelectorAll('.nav-links a').forEach(function(link) {
   link.addEventListener('click', function() {
+    if (!navLinks || !mobileToggle) return;
     navLinks.classList.remove('active');
     mobileToggle.classList.remove('active');
+    document.body.style.overflow = '';
   });
 });
 
@@ -62,6 +77,7 @@ document.querySelectorAll('.nav-links a').forEach(function(link) {
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', function() {
+  if (!navbar) return;
   if (window.scrollY > 100) {
     navbar.classList.add('scrolled');
   } else {
@@ -69,18 +85,44 @@ window.addEventListener('scroll', function() {
   }
 });
 
+// ========== ACTIVE NAV LINK ON SCROLL ==========
+const sections = document.querySelectorAll('main section[id]');
+const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY + 120;
+
+  sections.forEach(section => {
+    const id = section.id;
+    const top = section.offsetTop;
+    const height = section.offsetHeight;
+
+    if (scrollPos >= top && scrollPos < top + height) {
+      navItems.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${id}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
+});
+
 // ========== SMOOTH SCROLLING ==========
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#') return;
+
+    const target = document.querySelector(href);
+    if (!target) return;
+
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const offsetTop = target.offsetTop - 80;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
-    }
+    const offsetTop = target.offsetTop - 80;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: 'smooth'
+    });
   });
 });
 
@@ -123,10 +165,12 @@ const lightboxImg = document.getElementById('lightboxImg');
 const lightboxClose = document.getElementById('lightboxClose');
 
 // Open lightbox on portfolio item click
-if (portfolioItems.length > 0) {
+if (lightbox && lightboxImg && portfolioItems.length > 0) {
   portfolioItems.forEach(item => {
     item.addEventListener('click', function() {
-      const imgSrc = this.querySelector('img').src;
+      const imgEl = this.querySelector('img');
+      if (!imgEl) return;
+      const imgSrc = imgEl.src;
       lightboxImg.src = imgSrc;
       lightbox.classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -135,28 +179,26 @@ if (portfolioItems.length > 0) {
 }
 
 // Close lightbox
-if (lightboxClose) {
+if (lightbox && lightboxClose) {
   lightboxClose.addEventListener('click', function() {
     lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
   });
-}
 
-// Close lightbox on background click
-if (lightbox) {
+  // Close lightbox on background click
   lightbox.addEventListener('click', function(e) {
     if (e.target === lightbox) {
       lightbox.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
     }
   });
 }
 
 // Close lightbox on ESC key
 document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+  if (e.key === 'Escape' && lightbox && lightbox.classList.contains('active')) {
     lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
   }
 });
 
@@ -194,7 +236,7 @@ if (videoFilterBtns.length > 0) {
 }
 
 // ========== TESTIMONIALS SWIPER ==========
-if (document.querySelector('.testimonials-swiper')) {
+if (document.querySelector('.testimonials-swiper') && window.Swiper) {
   const swiper = new Swiper('.testimonials-swiper', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -224,7 +266,7 @@ const instaPosts = document.querySelectorAll('.insta-post');
 if (instaPosts.length > 0) {
   instaPosts.forEach(post => {
     post.addEventListener('click', () => {
-      window.open('https://www.instagram.com/pawanstudiobelwai', '_blank');
+      window.open('https://www.instagram.com/PsWeddingStories', '_blank');
     });
   });
 }
@@ -235,6 +277,7 @@ const faqItems = document.querySelectorAll('.faq-item');
 if (faqItems.length > 0) {
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
+    if (!question) return;
     
     question.addEventListener('click', () => {
       const isActive = item.classList.contains('active');
@@ -246,6 +289,19 @@ if (faqItems.length > 0) {
       if (!isActive) {
         item.classList.add('active');
       }
+    });
+  });
+}
+
+// ========== SERVICE CARDS -> WHATSAPP INQUIRY ==========
+const serviceCards = document.querySelectorAll('.service-card');
+
+if (serviceCards.length > 0) {
+  serviceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const serviceName = card.dataset.service || 'Photography Service';
+      const msg = `Hello, I want to know more about your ${serviceName} package.`;
+      window.open(`https://wa.me/918382905455?text=${encodeURIComponent(msg)}`, '_blank');
     });
   });
 }
@@ -311,7 +367,6 @@ if (backToTop) {
 }
 
 // ========== FORM VALIDATION ==========
-// Add input validation styling
 const formInputs = document.querySelectorAll('.form-group input, .form-group textarea, .form-group select');
 
 if (formInputs.length > 0) {
@@ -346,7 +401,7 @@ if (formInputs.length > 0) {
 const phoneInput = document.getElementById('phone');
 
 if (phoneInput) {
-  phoneInput.addEventListener('input', function(e) {
+  phoneInput.addEventListener('input', function() {
     // Only allow numbers and + symbol
     let value = this.value.replace(/[^0-9+]/g, '');
     
@@ -376,7 +431,7 @@ if (emailInput) {
   });
 }
 
-// ========== LAZY LOADING IMAGES ==========
+// ========== LAZY LOADING IMAGES (for data-src, if used) ==========
 if ('IntersectionObserver' in window) {
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -411,28 +466,12 @@ function debounce(func, wait) {
   };
 }
 
-// Optimize scroll events
+// Optimize scroll events (placeholder for future use)
 const optimizedScroll = debounce(() => {
   // Add any scroll-based optimizations here
 }, 100);
 
 window.addEventListener('scroll', optimizedScroll);
-
-// ========== SERVICE WORKER (Optional - for PWA) ==========
-// Uncomment if you want to add PWA functionality
-/*
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js')
-      .then(registration => {
-        console.log('ServiceWorker registered:', registration);
-      })
-      .catch(error => {
-        console.log('ServiceWorker registration failed:', error);
-      });
-  });
-}
-*/
 
 // ========== ANALYTICS TRACKING (Optional) ==========
 // Track button clicks
@@ -440,9 +479,7 @@ document.querySelectorAll('.btn').forEach(btn => {
   btn.addEventListener('click', function() {
     const btnText = this.textContent.trim();
     console.log('Button clicked:', btnText);
-    
-    // Add Google Analytics or other tracking here
-    // Example: gtag('event', 'click', { 'button_name': btnText });
+    // Yaha Google Analytics ya koi aur tracking add kar sakte hain
   });
 });
 
@@ -461,17 +498,6 @@ console.log('%c🚀 Website Developed with Advanced Features', 'color: #25D366; 
 console.log('%c📞 Contact: +91 8382905455', 'color: #FFD700; font-size: 14px;');
 console.log('%c🌐 Location: Belwai Kadipur, Sultanpur', 'color: #fff; font-size: 14px;');
 
-// ========== PREVENT RIGHT CLICK ON IMAGES (Optional) ==========
-// Uncomment if you want to protect images
-/*
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-    alert('Image protection is enabled!');
-  });
-});
-*/
-
 // ========== DYNAMIC YEAR IN FOOTER ==========
 const currentYear = new Date().getFullYear();
 const yearElements = document.querySelectorAll('.current-year');
@@ -480,27 +506,21 @@ yearElements.forEach(element => {
 });
 
 // ========== LOADING STATE FOR BUTTONS ==========
-document.querySelectorAll('.btn-primary, .submit-btn').forEach(btn => {
+document.querySelectorAll('.submit-btn').forEach(btn => {
   btn.addEventListener('click', function() {
-    // Add loading state
     const originalText = this.innerHTML;
-    
-    // Don't add loading for anchor tags with href
-    if (this.tagName === 'BUTTON' || (this.tagName === 'A' && this.getAttribute('type') === 'submit')) {
-      this.innerHTML = '<span>⏳ Loading...</span>';
-      this.disabled = true;
+    this.innerHTML = '<span>⏳ Loading...</span>';
+    this.disabled = true;
       
-      // Reset after 2 seconds (for demo)
-      setTimeout(() => {
-        this.innerHTML = originalText;
-        this.disabled = false;
-      }, 2000);
-    }
+    // Reset after 2 seconds (for UX feedback)
+    setTimeout(() => {
+      this.innerHTML = originalText;
+      this.disabled = false;
+    }, 2000);
   });
 });
 
 // ========== ANIMATION ON SCROLL (Alternative to AOS) ==========
-// Custom scroll animations if AOS is not loaded
 if (typeof AOS === 'undefined') {
   const animateOnScroll = () => {
     const elements = document.querySelectorAll('[data-aos]');
@@ -547,7 +567,6 @@ if (filterBtns.length > 0) {
 }
 
 // ========== MOBILE TOUCH OPTIMIZATIONS ==========
-// Improve touch responsiveness on mobile
 let touchStartY = 0;
 let touchEndY = 0;
 
@@ -562,27 +581,28 @@ document.addEventListener('touchend', function(e) {
 
 function handleSwipe() {
   // Swipe up to close mobile menu
-  if (touchStartY - touchEndY > 50 && navLinks.classList.contains('active')) {
+  if (touchStartY - touchEndY > 50 && navLinks && navLinks.classList.contains('active')) {
     navLinks.classList.remove('active');
-    mobileToggle.classList.remove('active');
+    if (mobileToggle) {
+      mobileToggle.classList.remove('active');
+    }
+    document.body.style.overflow = '';
   }
 }
 
 // ========== WEBSITE PERFORMANCE METRICS ==========
-// Log website load time
 window.addEventListener('load', () => {
-  const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
-  console.log(`%c⚡ Page loaded in ${loadTime}ms`, 'color: #25D366; font-size: 14px; font-weight: bold;');
+  if (window.performance && window.performance.timing) {
+    const loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+    console.log(`%c⚡ Page loaded in ${loadTime}ms`, 'color: #25D366; font-size: 14px; font-weight: bold;');
+  }
 });
 
 // ========== ERROR HANDLING ==========
-// Global error handler
 window.addEventListener('error', function(e) {
   console.error('Error occurred:', e.message);
-  // You can send this to an error tracking service
 });
 
-// Handle unhandled promise rejections
 window.addEventListener('unhandledrejection', function(e) {
   console.error('Unhandled promise rejection:', e.reason);
 });
@@ -590,41 +610,27 @@ window.addEventListener('unhandledrejection', function(e) {
 // ========== NETWORK STATUS DETECTION ==========
 window.addEventListener('online', function() {
   console.log('🌐 Back online!');
-  // You can show a notification here
 });
 
 window.addEventListener('offline', function() {
   console.log('📵 No internet connection');
-  // You can show a notification here
 });
-
-// ========== COPY PROTECTION (Optional) ==========
-// Uncomment if you want to prevent text selection
-/*
-document.addEventListener('selectstart', function(e) {
-  e.preventDefault();
-});
-
-document.addEventListener('copy', function(e) {
-  e.preventDefault();
-  alert('Content is protected!');
-});
-*/
 
 // ========== INITIALIZATION COMPLETE ==========
 console.log('%c✅ All JavaScript initialized successfully!', 'color: #25D366; font-size: 16px; font-weight: bold;');
 
 // ========== EXPOSE GLOBAL FUNCTIONS (Optional) ==========
-// Make some functions globally accessible if needed
 window.pawanStudio = {
   openLightbox: (imageSrc) => {
+    if (!lightbox || !lightboxImg) return;
     lightboxImg.src = imageSrc;
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
   },
   closeLightbox: () => {
+    if (!lightbox) return;
     lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
   },
   scrollToTop: () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -634,5 +640,3 @@ window.pawanStudio = {
     window.open(`https://wa.me/918382905455?text=${encodeURIComponent(defaultMessage)}`, '_blank');
   }
 };
-
-// ========== END OF SCRIPT ==========
