@@ -2290,3 +2290,15 @@ section[id] {
   cursor: pointer;
   line-height: 1;
 }
+
+
+
+.video-quality-tip {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+.video-quality-tip strong {
+  color: #ffd54a;
+}
