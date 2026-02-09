@@ -641,3 +641,60 @@ window.pawanStudio = {
     window.open(`https://wa.me/918382905455?text=${encodeURIComponent(defaultMessage)}`, '_blank');
   }
 };
+
+// ========== VIDEO FULLSCREEN LIGHTBOX ==========
+document.addEventListener('DOMContentLoaded', function () {
+  const videoItems = document.querySelectorAll('.video-gallery-section .video-item');
+  const videoLightbox = document.getElementById('videoLightbox');
+  const videoLightboxIframe = document.getElementById('videoLightboxIframe');
+  const videoLightboxClose = document.getElementById('videoLightboxClose');
+
+  if (!videoItems.length || !videoLightbox || !videoLightboxIframe) return;
+
+  // Har video card ke iframe ko fullscreen lightbox me kholna
+  videoItems.forEach(item => {
+    const wrapper = item.querySelector('.video-wrapper');
+    if (!wrapper) return;
+
+    wrapper.addEventListener('click', () => {
+      const iframe = item.querySelector('iframe');
+      if (!iframe) return;
+
+      const src  = iframe.getAttribute('src') || '';
+      const base = src.split('?')[0]; // query params hatao
+
+      // 4K preferred (hd2160) + autoplay
+      const newSrc =
+        `${base}?autoplay=1&rel=0&modestbranding=1&vq=hd2160`;
+
+      videoLightboxIframe.src = newSrc;
+      videoLightbox.classList.add('active');
+      document.body.style.overflow = 'hidden'; // background scroll band
+    });
+  });
+
+  function closeVideoLightbox() {
+    videoLightbox.classList.remove('active');
+    videoLightboxIframe.src = '';       // video turant stop
+    document.body.style.overflow = '';  // scroll wapas
+  }
+
+  // Close button
+  if (videoLightboxClose) {
+    videoLightboxClose.addEventListener('click', closeVideoLightbox);
+  }
+
+  // Dark background pe click -> close
+  videoLightbox.addEventListener('click', (e) => {
+    if (e.target === videoLightbox) {
+      closeVideoLightbox();
+    }
+  });
+
+  // ESC key se close
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoLightbox.classList.contains('active')) {
+      closeVideoLightbox();
+    }
+  });
+});
