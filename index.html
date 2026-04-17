@@ -148,8 +148,8 @@
         </p>
         
         <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-          <a href="#contact" class="btn btn-primary" aria-label="Book your wedding or event shoot">
-            <span>📞 Book Your Shoot</span>
+          <a href="#pricing" class="btn btn-primary">
+            <span>📦 View Packages</span>
           </a>
           <a href="#portfolio" class="btn btn-secondary">
             <span>📸 View Portfolio</span>
@@ -1132,7 +1132,7 @@
 
         <div class="contact-form-box" data-aos="fade-left">
           <h3>Send Us a Message</h3>
-          <form id="contactForm">
+          <form id="contactForm" onsubmit="submitToWhatsApp(event)">
             
             <div class="form-group">
               <label for="name">Full Name *</label>
@@ -1191,7 +1191,7 @@
   <!-- ==================== FOOTER ==================== -->
   <footer class="footer">
     <div class="footer-content">
-      <p>© 2026 Pawan Studio. All Rights Reserved.</p>
+      <p>© <span id="footerYear"></span> Pawan Studio. All Rights Reserved.</p>
     </div>
   </footer>
   <!-- ==================== FLOATING BUTTONS ==================== -->

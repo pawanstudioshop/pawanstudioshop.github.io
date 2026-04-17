@@ -698,3 +698,23 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+// ========== CONTACT FORM - WHATSAPP SUBMIT ==========
+function submitToWhatsApp(e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var phone = document.getElementById('phone').value;
+  var service = document.getElementById('service').value;
+  var message = document.getElementById('message').value;
+  var text = 'Hello Pawan Studio!'
+    + '%0AName: ' + name
+    + '%0APhone: ' + phone
+    + '%0AService: ' + service
+    + '%0AMessage: ' + message;
+  window.open('https://wa.me/918382905455?text=' + text, '_blank');
+}
+
+// ========== FOOTER YEAR AUTO UPDATE ==========
+var yearEl = document.getElementById('footerYear');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
