@@ -2727,3 +2727,30 @@ section[id] {
   margin-bottom: 12px;
   letter-spacing: 2px;
 }
+
+/* ==================== PRICING BADGE FIX ==================== */
+.pricing-card.featured {
+  padding-top: 58px;
+}
+
+.pricing-badge {
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-size: 0.68rem;
+  padding: 8px 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pricing-card.featured {
+    padding-top: 54px;
+  }
+
+  .pricing-badge {
+    font-size: 0.62rem;
+    padding: 7px 12px;
+  }
+}
