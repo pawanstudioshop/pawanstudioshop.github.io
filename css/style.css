@@ -2552,3 +2552,17 @@ section[id] {
     font-size: 0.82rem;
   }
 }
+
+/* ==================== NAVBAR SPACING FIX ==================== */
+.nav-links {
+  gap: 25px;
+}
+@media (min-width: 969px) {
+  .nav-container {
+    max-width: 1100px;
+  }
+  .nav-links {
+    gap: 30px;
+    margin-left: auto;
+  }
+}
