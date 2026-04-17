@@ -708,3 +708,62 @@ function submitToWhatsApp(e) {
 
   window.open('https://wa.me/918382905455?text=' + text, '_blank');
 }
+
+
+function submitToWhatsAppDirect() {
+  var nameEl = document.getElementById('name');
+  var phoneEl = document.getElementById('phone');
+  var serviceEl = document.getElementById('service');
+  var otherServiceEl = document.getElementById('otherService');
+  var eventDateEl = document.getElementById('eventDate');
+  var messageEl = document.getElementById('message');
+
+  var name = nameEl ? nameEl.value.trim() : '';
+  var phone = phoneEl ? phoneEl.value.trim() : '';
+  var service = serviceEl ? serviceEl.value : '';
+  var otherService = otherServiceEl ? otherServiceEl.value : '';
+  var eventDate = eventDateEl ? eventDateEl.value : '';
+  var message = messageEl ? messageEl.value.trim() : '';
+
+  if (!name) {
+    alert('Please enter your name');
+    return;
+  }
+
+  if (!phone) {
+    alert('Please enter your WhatsApp number');
+    return;
+  }
+
+  if (!service) {
+    alert('Please select a package or service');
+    return;
+  }
+
+  if (service === 'other') {
+    if (!otherService) {
+      alert('Please select event type');
+      return;
+    }
+    service = otherService;
+  }
+
+  var text = 'Namaste Pawan Studio!\n\n'
+    + 'Client Details:\n'
+    + 'Name: ' + name + '\n'
+    + 'Phone: ' + phone + '\n'
+    + 'Service: ' + service;
+
+  if (eventDate) {
+    text += '\nEvent Date: ' + eventDate;
+  }
+
+  if (message) {
+    text += '\nMessage: ' + message;
+  }
+
+  text += '\n\nSent from pawanstudio.shop';
+
+  var url = 'https://api.whatsapp.com/send?phone=918382905455&text=' + encodeURIComponent(text);
+  window.location.href = url;
+}
