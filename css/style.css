@@ -2719,3 +2719,11 @@ section[id] {
   color: var(--gray-text);
   margin-top: 3px;
 }
+
+/* ==================== TESTIMONIAL STARS ==================== */
+.testimonial-stars {
+  color: var(--primary-gold);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
