@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://pawanstudio.shop/sitemap.xml
+
+# Block unnecessary files
+Disallow: /assets/pdf/
+Disallow: /.git/
