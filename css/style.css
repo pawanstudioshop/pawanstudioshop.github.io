@@ -2566,3 +2566,49 @@ section[id] {
     margin-left: auto;
   }
 }
+
+/* ==================== TRUST STRIP ==================== */
+.trust-strip {
+  background: linear-gradient(135deg, var(--primary-red), #8B0000);
+  padding: 18px 20px;
+  overflow: hidden;
+}
+.trust-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.trust-icon {
+  font-size: 1.2rem;
+}
+.trust-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .trust-strip {
+    padding: 14px 15px;
+  }
+  .trust-items {
+    gap: 12px 20px;
+    justify-content: center;
+  }
+  .trust-text {
+    font-size: 0.72rem;
+  }
+  .trust-icon {
+    font-size: 1rem;
+  }
+}
