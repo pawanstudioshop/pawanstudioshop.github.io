@@ -307,41 +307,6 @@ if (serviceCards.length > 0) {
   });
 }
 
-// ========== CONTACT FORM SUBMISSION ==========
-const contactForm = document.getElementById('contactForm');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const phone = formData.get('phone');
-    const email = formData.get('email');
-    const service = formData.get('service');
-    const message = formData.get('message');
-
-    // Create WhatsApp message
-    let whatsappMessage = `*New Booking Inquiry from Website*%0A%0A`;
-    whatsappMessage += `*Name:* ${name}%0A`;
-    whatsappMessage += `*Phone:* ${phone}%0A`;
-    if (email) {
-      whatsappMessage += `*Email:* ${email}%0A`;
-    }
-    whatsappMessage += `*Service:* ${service}%0A`;
-    if (message) {
-      whatsappMessage += `*Message:* ${message}`;
-    }
-    
-    // Open WhatsApp
-    window.open(`https://wa.me/918382905455?text=${whatsappMessage}`, '_blank');
-    
-    // Show success message
-    alert('Thank you! Redirecting to WhatsApp...');
-    
-    // Reset form
-    contactForm.reset();
   });
 }
 
