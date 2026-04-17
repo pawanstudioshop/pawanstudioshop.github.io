@@ -99,7 +99,7 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#videos">Videos</a></li>
-          <li><a href="#pricing">Packages</a></li>
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="tel:8382905455" class="nav-cta">Call Now</a></li>
         </ul>
@@ -613,290 +613,116 @@
   </div>
 </section>
 
+<!-- ==================== INSTAGRAM SECTION ==================== -->
+<section class="section instagram-section" id="instagram">
+  <div class="section-title" data-aos="fade-up">
+    <h2>Follow Us on Instagram</h2>
+    <div class="divider"></div>
+    <p>Stay updated with our latest work & behind the scenes</p>
+  </div>
 
+  <div class="instagram-container">
+      
+    <div class="instagram-header" data-aos="fade-up" data-aos-delay="100">
+      <div class="insta-profile">
+        <div class="insta-avatar">
+          <img src="assets/logo.png" alt="Pawan Studio Instagram" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        </div>
+        <div class="insta-info">
+          <h3>@PsWeddingStories</h3>
+          <p>📸 Professional Photography & Videography<br>
+          📍 Belwai Kadipur, Sultanpur<br>
+          💍 Weddings | Events | Pre-Wedding</p>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/PsWeddingStories" target="_blank" class="btn btn-primary">
+        <span>📸 Follow on Instagram</span>
+      </a>
+    </div>
+
+  </div>
+</section>
 
    <!-- ==================== PRICING SECTION ==================== -->
 <section class="section pricing-section" id="pricing">
   <div class="section-title" data-aos="fade-up">
-    <h2>Wedding Packages</h2>
+    <h2>Pricing Packages</h2>
     <div class="divider"></div>
-    <p>Apne budget ke hisaab se perfect package chuniye</p>
+    <p>Premium wedding & event packages from ₹50,000 to ₹2,00,000</p>
   </div>
 
-  <!-- PACKAGE CARDS -->
   <div class="pricing-grid">
-
-    <!-- Package 1: Classic -->
+    
+    <!-- Package 1 -->
     <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
-      <div class="pkg-icon">📦</div>
-      <h3>Classic</h3>
+      <h3>Classic Wedding</h3>
       <div class="pricing-price">₹50,000</div>
-      <div class="pricing-duration">Wedding Day Only • 1 Din</div>
+      <div class="pricing-duration">Starting Package</div>
       <ul class="pricing-features">
-        <li>👥 Team: 3 Members</li>
-        <li>📸 1 Senior Photographer</li>
-        <li>📸 Candid + Traditional</li>
-        <li>📸 300+ Edited Photos</li>
-        <li>🎥 1 Videographer (Full HD)</li>
-        <li>🎥 Traditional Video (30-40 Min)</li>
-        <li>🎬 Cinematic Highlight (3-4 Min)</li>
-        <li>📖 1 Album (12×36, 20 Pages)</li>
-        <li>💾 16GB Pendrive</li>
-        <li>📱 1 Instagram Reel</li>
-        <li>🚚 Delivery: 20-30 Days</li>
-        <li class="not-included">❌ Pre-Wedding</li>
-        <li class="not-included">❌ Drone</li>
+        <li>2 Professional Photographers</li>
+        <li>Full Day Coverage (1 Main Function)</li>
+        <li>400+ Edited Photos</li>
+        <li>Full HD Cinematic Video</li>
+        <li>1 Premium Wedding Album</li>
+        <li>Online Photo Gallery</li>
       </ul>
-      <a href="assets/pdf/classic-50k.pdf" download class="btn btn-secondary pkg-download-btn">
-        <span>⬇️ Download Quotation</span>
-      </a>
-      <a href="https://wa.me/918382905455?text=Hello%20Pawan%20Studio!%20Mujhe%20Classic%20Package%20(₹50%2C000)%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" class="btn btn-primary" style="margin-top:10px;">
-        <span>💬 Book on WhatsApp</span>
+      <a href="#contact" class="btn btn-primary">
+        <span>Book Classic</span>
       </a>
     </div>
 
-    <!-- Package 2: Royal -->
+    <!-- Package 2 -->
     <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
-      <div class="pricing-badge">⭐ MOST POPULAR</div>
-      <div class="pkg-icon">⭐</div>
-      <h3>Royal</h3>
+      <div class="pricing-badge">MOST POPULAR</div>
+      <h3>Signature Wedding</h3>
       <div class="pricing-price">₹1,00,000</div>
-      <div class="pricing-duration">2-3 Din Coverage</div>
+      <div class="pricing-duration">Starting Package</div>
       <ul class="pricing-features">
-        <li>👥 Team: 6-7 Members</li>
-        <li>💑 Pre-Wedding (1 Day, 2-3 Locations)</li>
-        <li>💑 Pre-Wedding Reel (2-3 Min)</li>
-        <li>🌿 Haldi Coverage (Photo + Video)</li>
-        <li>📸 2 Photographers (Candid + Trad)</li>
-        <li>📸 500+ Edited Photos</li>
-        <li>🎥 2 Videographers (HD + 4K)</li>
-        <li>🎬 Cinematic Film (5-8 Min)</li>
-        <li>🚁 Drone Included</li>
-        <li>📖 1 Main Album (30 Pages)</li>
-        <li>📖 2 Parent Albums</li>
-        <li>🖼️ 1 Canvas Print (16×24)</li>
-        <li>📱 3-4 Instagram Reels</li>
-        <li>💾 32GB Pendrive + Google Drive</li>
-        <li>🚚 Delivery: 30-45 Days</li>
+        <li>3 Photographers + 1 Cinematographer</li>
+        <li>2 Days Complete Coverage</li>
+        <li>700+ Edited Photos</li>
+        <li>4K Cinematic Wedding Film</li>
+        <li>Drone Shoot (Subject to Permission)</li>
+        <li>2 Premium Wedding Albums</li>
+        <li>Teaser + Instagram Reels</li>
+        <li>Online Gallery & Backup</li>
       </ul>
-      <a href="assets/pdf/royal-1lakh.pdf" download class="btn btn-secondary pkg-download-btn">
-        <span>⬇️ Download Quotation</span>
-      </a>
-      <a href="https://wa.me/918382905455?text=Hello%20Pawan%20Studio!%20Mujhe%20Royal%20Package%20(₹1%2C00%2C000)%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" class="btn btn-primary" style="margin-top:10px;">
-        <span>💬 Book on WhatsApp</span>
+      <a href="#contact" class="btn btn-primary">
+        <span>Book Signature</span>
       </a>
     </div>
 
-    <!-- Package 3: Grand Royal -->
+    <!-- Package 3 -->
     <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
-      <div class="pkg-icon">👑</div>
-      <h3>Grand Royal</h3>
-      <div class="pricing-price">₹1,50,000</div>
-      <div class="pricing-duration">4-5 Din • Sab Events</div>
+      <h3>Royal Wedding Experience</h3>
+      <div class="pricing-price">₹2,00,000</div>
+      <div class="pricing-duration">Starting Package</div>
       <ul class="pricing-features">
-        <li>👥 Team: 10-12 Members</li>
-        <li>💑 Pre-Wedding Premium (1-2 Days)</li>
-        <li>🌸 Mehndi + 🌿 Haldi + 🎤 Sangeet</li>
-        <li>💒 Wedding Day + 🎊 Reception</li>
-        <li>📸 2-3 Photographers</li>
-        <li>📸 1500+ Edited Photos</li>
-        <li>🎥 2-3 Videographers (4K)</li>
-        <li>🎬 Wedding Film (10-15 Min)</li>
-        <li>🎬 Same Day Edit (SDE)</li>
-        <li>🚁 Drone Premium (4K)</li>
-        <li>📖 1 Luxury Album (40 Pages)</li>
-        <li>📖 1 Pre-Wed + 4 Parent Albums</li>
-        <li>🖼️ 2 Canvas Prints</li>
-        <li>📱 8-10 Instagram Reels</li>
-        <li>💾 64GB Pendrive + Cloud</li>
-        <li>🚚 Delivery: 45-60 Days</li>
+        <li>Complete Professional Team</li>
+        <li>Multi-Day Wedding Coverage</li>
+        <li>1200+ Edited Photos</li>
+        <li>Multiple 4K Cinematic Films</li>
+        <li>Multi-Camera & Drone Coverage</li>
+        <li>LED Wall / Live Streaming Support</li>
+        <li>3 Luxury Photo Albums</li>
+        <li>Pre-Wedding Shoot Included</li>
       </ul>
-      <a href="assets/pdf/grand-royal-1.5lakh.pdf" download class="btn btn-secondary pkg-download-btn">
-        <span>⬇️ Download Quotation</span>
-      </a>
-      <a href="https://wa.me/918382905455?text=Hello%20Pawan%20Studio!%20Mujhe%20Grand%20Royal%20Package%20(₹1%2C50%2C000)%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank" class="btn btn-primary" style="margin-top:10px;">
-        <span>💬 Book on WhatsApp</span>
-      </a>
-    </div>
-
-    <!-- Package 4: Signature -->
-    <div class="pricing-card signature-card" data-aos="fade-up" data-aos-delay="400">
-      <div class="pkg-icon">💎</div>
-      <h3>Signature</h3>
-      <div class="pricing-price">₹3L – ₹10L</div>
-      <div class="pricing-duration">5-7+ Din • Ultra Premium</div>
-      <ul class="pricing-features">
-        <li>👥 Team: 15-20+ Members</li>
-        <li>💑 Destination Pre-Wedding</li>
-        <li>✅ Roka to Griha Pravesh (All)</li>
-        <li>📸 3-5 Photographers</li>
-        <li>📸 2000-5000+ Edited Photos</li>
-        <li>🎥 3-5 Videographers (4K RAW)</li>
-        <li>🎬 Feature Film (20-30 Min)</li>
-        <li>🎬 SDE + Live Streaming</li>
-        <li>🚁 4K Drone + Jib Crane + Gimbal</li>
-        <li>📖 Multiple Premium Albums</li>
-        <li>📖 6-8 Parent Albums</li>
-        <li>🖼️ Canvas + Acrylic Frames</li>
-        <li>📱 15-20 Instagram Reels</li>
-        <li>👔 Dedicated Project Manager</li>
-        <li>💾 Premium Wooden Box Delivery</li>
-      </ul>
-      <a href="assets/pdf/signature-3l-10l.pdf" download class="btn btn-secondary pkg-download-btn">
-        <span>⬇️ Download Quotation</span>
-      </a>
-      <a href="https://wa.me/918382905455?text=Hello%20Pawan%20Studio!%20Mujhe%20Signature%20Package%20(₹3L-10L)%20ke%20baare%20mein%20custom%20quote%20chahiye." target="_blank" class="btn btn-primary" style="margin-top:10px;">
-        <span>💬 Custom Quote WhatsApp</span>
+      <a href="#contact" class="btn btn-primary">
+        <span>Book Royal</span>
       </a>
     </div>
 
   </div>
 
-  <!-- COMPARISON TABLE -->
-  <div class="comparison-wrapper" data-aos="fade-up">
-    <h3 class="comparison-title">📊 Package Comparison</h3>
-    <div class="comparison-scroll">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>📦 Classic<br><span>₹50K</span></th>
-            <th class="highlight-col">⭐ Royal<br><span>₹1L</span></th>
-            <th>👑 Grand<br><span>₹1.5L</span></th>
-            <th>💎 Signature<br><span>₹3L+</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Coverage Days</td>
-            <td>1 Din</td>
-            <td class="highlight-col">2-3 Din</td>
-            <td>4-5 Din</td>
-            <td>5-7+ Din</td>
-          </tr>
-          <tr>
-            <td>Team Size</td>
-            <td>3</td>
-            <td class="highlight-col">6-7</td>
-            <td>10-12</td>
-            <td>15-20+</td>
-          </tr>
-          <tr>
-            <td>Pre-Wedding</td>
-            <td>❌</td>
-            <td class="highlight-col">✅</td>
-            <td>✅ Premium</td>
-            <td>✅ Destination</td>
-          </tr>
-          <tr>
-            <td>Haldi/Mehndi</td>
-            <td>❌</td>
-            <td class="highlight-col">Haldi Only</td>
-            <td>✅ Both</td>
-            <td>✅ All Events</td>
-          </tr>
-          <tr>
-            <td>Sangeet</td>
-            <td>❌</td>
-            <td class="highlight-col">❌</td>
-            <td>✅</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Reception</td>
-            <td>❌</td>
-            <td class="highlight-col">❌</td>
-            <td>✅</td>
-            <td>✅</td>
-          </tr>
-          <tr>
-            <td>Photographers</td>
-            <td>1</td>
-            <td class="highlight-col">2</td>
-            <td>2-3</td>
-            <td>3-5</td>
-          </tr>
-          <tr>
-            <td>Edited Photos</td>
-            <td>300+</td>
-            <td class="highlight-col">500+</td>
-            <td>1500+</td>
-            <td>2000-5000+</td>
-          </tr>
-          <tr>
-            <td>Video Quality</td>
-            <td>Full HD</td>
-            <td class="highlight-col">HD + 4K</td>
-            <td>4K</td>
-            <td>4K RAW</td>
-          </tr>
-          <tr>
-            <td>Cinematic Film</td>
-            <td>3-4 Min</td>
-            <td class="highlight-col">5-8 Min</td>
-            <td>10-15 Min</td>
-            <td>20-30 Min</td>
-          </tr>
-          <tr>
-            <td>Drone</td>
-            <td>❌</td>
-            <td class="highlight-col">✅</td>
-            <td>✅ Premium</td>
-            <td>✅ 4K</td>
-          </tr>
-          <tr>
-            <td>Same Day Edit</td>
-            <td>❌</td>
-            <td class="highlight-col">❌</td>
-            <td>✅</td>
-            <td>✅ Premium</td>
-          </tr>
-          <tr>
-            <td>Main Album</td>
-            <td>20 Pages</td>
-            <td class="highlight-col">30 Pages</td>
-            <td>40 Pages</td>
-            <td>50+ Pages</td>
-          </tr>
-          <tr>
-            <td>Parent Albums</td>
-            <td>❌</td>
-            <td class="highlight-col">2</td>
-            <td>4</td>
-            <td>6-8</td>
-          </tr>
-          <tr>
-            <td>Instagram Reels</td>
-            <td>1</td>
-            <td class="highlight-col">3-4</td>
-            <td>8-10</td>
-            <td>15-20</td>
-          </tr>
-          <tr>
-            <td>Delivery Time</td>
-            <td>20-30 Days</td>
-            <td class="highlight-col">30-45 Days</td>
-            <td>45-60 Days</td>
-            <td>60-90 Days</td>
-          </tr>
-          <tr class="download-row">
-            <td>Quotation PDF</td>
-            <td><a href="assets/pdf/classic-50k.pdf" download class="tbl-download-btn">⬇️ Download</a></td>
-            <td class="highlight-col"><a href="assets/pdf/royal-1lakh.pdf" download class="tbl-download-btn">⬇️ Download</a></td>
-            <td><a href="assets/pdf/grand-royal-1.5lakh.pdf" download class="tbl-download-btn">⬇️ Download</a></td>
-            <td><a href="assets/pdf/signature-3l-10l.pdf" download class="tbl-download-btn">⬇️ Download</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="comparison-note">
-      📞 Custom requirements ke liye call karein: 
-      <a href="tel:8382905455" style="color:var(--primary-gold);font-weight:700;">+91 8382905455</a>
-      &nbsp;|&nbsp; 💳 Payment: 40% Advance · 30% Before · 30% On Day
-      &nbsp;|&nbsp; 🚗 Travel: 50 KM Free
+  <div style="text-align: center; margin-top: 40px; color: var(--gray-text);" data-aos="fade-up">
+    <p style="font-size: 1.05rem;">
+      Exact pricing event ke according change ho sakti hai.  
+      📞 Call for custom quote:
+      <a href="tel:8382905455" style="color: var(--primary-gold); text-decoration: none; font-weight: 700;">
+        +91 8382905455
+      </a>
     </p>
   </div>
-
 </section>
 
     <!-- ==================== TESTIMONIALS SECTION ==================== -->
@@ -999,11 +825,194 @@
 
 
 
-    
+    <!-- ==================== TEAM SECTION ==================== -->
+    <section class="section team-section" id="team">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Our Expert Team</h2>
+        <div class="divider"></div>
+        <p>Meet the talented professionals behind every shot</p>
+      </div>
 
-    
+      <div class="team-container">
+        
+        <!-- Team Member 1 - Ranjeet Gupta -->
+        <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-image">
+            <img src="assets/team/member1.jpg" 
+                 alt="Ranjeet Gupta" 
+                 onerror="this.src='https://ui-avatars.com/api/?name=Ranjeet+Gupta&size=400&background=E63946&color=fff&bold=true'">
+            <div class="team-social">
+              <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+              <a href="tel:8382905455" title="Call">📞</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Ranjeet Gupta</h3>
+            <p class="team-role">Founder & Lead Photographer</p>
+            <p class="team-desc">30+ years experience in wedding & event photography</p>
+          </div>
+        </div>
 
-    
+        <!-- Team Member 2 - Rahul Sharma -->
+        <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-image">
+            <img src="assets/team/member2.jpg" 
+                 alt="Rahul Sharma" 
+                 onerror="this.src='https://ui-avatars.com/api/?name=Rahul+Sharma&size=400&background=FFD700&color=000&bold=true'">
+            <div class="team-social">
+              <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+              <a href="tel:8382905455" title="Call">📞</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Rahul Sharma</h3>
+            <p class="team-role">Drone Specialist</p>
+            <p class="team-desc">Expert in aerial cinematography & drone operations</p>
+          </div>
+        </div>
+
+        <!-- Team Member 3 - Juhi -->
+        <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+          <div class="team-image">
+            <img src="assets/team/member3.jpg" 
+                 alt="Juhi" 
+                 onerror="this.src='https://ui-avatars.com/api/?name=Juhi&size=400&background=E63946&color=fff&bold=true'">
+            <div class="team-social">
+              <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+              <a href="tel:8382905455" title="Call">📞</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Juhi</h3>
+            <p class="team-role">Senior Video Editor</p>
+            <p class="team-desc">Specialized in cinematic editing & color grading</p>
+          </div>
+        </div>
+
+        <!-- Team Member 4 - Shivam Gupta -->
+        <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+          <div class="team-image">
+            <img src="assets/team/member4.jpg" 
+                 alt="Shivam Gupta" 
+                 onerror="this.src='https://ui-avatars.com/api/?name=Shivam+Gupta&size=400&background=FFD700&color=000&bold=true'">
+            <div class="team-social">
+              <a href="https://wa.me/918382905455" target="_blank" title="WhatsApp">💬</a>
+              <a href="tel:8382905455" title="Call">📞</a>
+            </div>
+          </div>
+          <div class="team-info">
+            <h3>Shivam Gupta</h3>
+            <p class="team-role">Cinematographer</p>
+            <p class="team-desc">Creative storytelling through cinematic videography</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== BLOG SECTION ==================== -->
+    <section class="section blog-section" id="blog">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Latest News & Tips</h2>
+        <div class="divider"></div>
+        <p>Photography insights, tips & our latest work</p>
+      </div>
+
+      <div class="blog-container">
+        
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-image">
+            <img src="assets/blog/blog1.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/wedding.jpg'">
+            <div class="blog-category">Wedding Tips</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>📅 15 Jan 2025</span>
+              <span>👤 Pawan Studio</span>
+            </div>
+            <h3>Top 10 Wedding Photography Poses for 2025</h3>
+            <p>Discover the most trending and timeless wedding photography poses that will make your wedding album unforgettable...</p>
+            <a href="#blog" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-image">
+            <img src="assets/blog/blog2.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/prewedding2.png'">
+            <div class="blog-category">Locations</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>📅 10 Jan 2025</span>
+              <span>👤 Pawan Studio</span>
+            </div>
+            <h3>Best Pre-Wedding Shoot Locations in Sultanpur</h3>
+            <p>Explore the most beautiful and photogenic locations around Sultanpur perfect for your pre-wedding photoshoot...</p>
+            <a href="#blog" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="blog-image">
+            <img src="assets/blog/blog3.jpg" alt="Blog Post" loading="lazy" onerror="this.src='assets/gallery/wedding3.jpg'">
+            <div class="blog-category">Behind The Scenes</div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>📅 5 Jan 2025</span>
+              <span>👤 Pawan Studio</span>
+            </div>
+            <h3>Behind The Scenes: Royal Wedding Coverage</h3>
+            <p>Take a peek into how we captured this magnificent royal wedding with our team of 50+ professionals...</p>
+            <a href="#blog" class="blog-read-more">Read More →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;" data-aos="fade-up">
+        <a href="#blog" class="btn btn-secondary">
+          <span>📰 View All Articles</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== AWARDS SECTION ==================== -->
+    <section class="section awards-section" id="awards">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Awards & Recognition</h2>
+        <div class="divider"></div>
+        <p>Celebrating 30+ years of excellence</p>
+      </div>
+
+      <div class="awards-container">
+        
+        <div class="award-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="award-icon">🏆</div>
+          <h3>Best Wedding Photography</h3>
+          <p>Sultanpur Photography Awards 2024</p>
+        </div>
+
+        <div class="award-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="award-icon">⭐</div>
+          <h3>30+ Years Excellence</h3>
+          <p>Serving Since 1990s</p>
+        </div>
+
+        <div class="award-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="award-icon">🎖️</div>
+          <h3>10,000+ Events Milestone</h3>
+          <p>Successfully Completed 2023</p>
+        </div>
+
+        <div class="award-card" data-aos="flip-left" data-aos-delay="400">
+          <div class="award-icon">💎</div>
+          <h3>Premium Quality Award</h3>
+          <p>UP Photography Association 2024</p>
+        </div>
+
+      </div>
+    </section>
 
     <!-- ==================== FAQ SECTION ==================== -->
     <section class="section faq-section" id="faq">
