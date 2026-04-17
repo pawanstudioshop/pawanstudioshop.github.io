@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Royal Package - Pawan Studio</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #fff; color: #1a1a1a; font-size: 13px; }
+  .page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 0; page-break-after: always; }
+  .cover { background: linear-gradient(160deg, #0a0a0a 0%, #1a1a1a 50%, #2d1010 100%); min-height: 297mm; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 40px; color: #fff; position: relative; }
+  .cover::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(212,175,55,0.12) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(180,30,30,0.15) 0%, transparent 50%); }
+  .cover-content { position: relative; z-index: 1; }
+  .cover-logo-text { font-size: 38px; font-weight: bold; letter-spacing: 6px; color: #D4AF37; text-transform: uppercase; margin-bottom: 6px; }
+  .cover-sub { font-size: 13px; letter-spacing: 4px; color: #aaa; text-transform: uppercase; margin-bottom: 50px; }
+  .cover-divider { width: 80px; height: 1px; background: #D4AF37; margin: 0 auto 50px; }
+  .cover-pkg-label { font-size: 11px; letter-spacing: 5px; color: #aaa; text-transform: uppercase; margin-bottom: 14px; }
+  .cover-pkg-name { font-size: 42px; font-weight: bold; color: #fff; letter-spacing: 2px; margin-bottom: 16px; }
+  .cover-price { font-size: 28px; color: #D4AF37; letter-spacing: 2px; margin-bottom: 16px; }
+  .cover-badge { display: inline-block; border: 1px solid #D4AF37; color: #D4AF37; font-size: 9px; letter-spacing: 3px; padding: 6px 16px; text-transform: uppercase; margin-bottom: 50px; }
+  .cover-divider2 { width: 40px; height: 1px; background: rgba(255,255,255,0.2); margin: 0 auto 50px; }
+  .cover-tagline { font-style: italic; font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 80px; letter-spacing: 1px; }
+  .cover-contact { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 2px; line-height: 2; text-transform: uppercase; }
+  .content-page { padding: 50px 55px; min-height: 297mm; position: relative; background: #fff; }
+  .content-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 20px; border-bottom: 2px solid #D4AF37; margin-bottom: 35px; }
+  .content-header-left .studio-name { font-size: 16px; font-weight: bold; color: #1a1a1a; letter-spacing: 2px; text-transform: uppercase; }
+  .content-header-left .studio-sub { font-size: 10px; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-top: 3px; }
+  .content-header-right { text-align: right; font-size: 10px; color: #888; line-height: 1.8; }
+  .section-block { margin-bottom: 28px; }
+  .section-label { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #D4AF37; margin-bottom: 12px; font-weight: bold; }
+  .section-title-big { font-size: 22px; font-weight: bold; color: #1a1a1a; margin-bottom: 8px; letter-spacing: 1px; }
+  .section-price { font-size: 32px; font-weight: bold; color: #B22222; letter-spacing: 1px; margin-bottom: 6px; }
+  .section-duration { font-size: 11px; color: #888; letter-spacing: 2px; text-transform: uppercase; }
+  .gold-line { width: 100%; height: 1px; background: linear-gradient(90deg, #D4AF37, transparent); margin: 22px 0; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .col-label { font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: #D4AF37; margin-bottom: 14px; font-weight: bold; }
+  .item-list { list-style: none; }
+  .item-list li { font-size: 12px; color: #333; padding: 7px 0; border-bottom: 1px solid #f0f0f0; padding-left: 14px; position: relative; line-height: 1.4; }
+  .item-list li::before { content: '—'; position: absolute; left: 0; color: #D4AF37; font-size: 10px; }
+  .highlight-box { background: #fdf9f0; border-left: 3px solid #D4AF37; padding: 16px 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; }
+  .highlight-box p { font-size: 12px; color: #555; line-height: 1.7; font-style: italic; }
+  .event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+  .event-box { background: #1a1a1a; color: #fff; padding: 14px 10px; text-align: center; border-radius: 4px; }
+  .event-box .ev-name { font-size: 11px; color: #D4AF37; font-weight: bold; letter-spacing: 1px; display: block; }
+  .event-box .ev-detail { font-size: 9px; color: #aaa; margin-top: 4px; display: block; }
+  .payment-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 10px; }
+  .payment-item { background: #1a1a1a; color: #fff; padding: 16px 12px; text-align: center; border-radius: 4px; }
+  .payment-item .pct { font-size: 22px; font-weight: bold; color: #D4AF37; display: block; }
+  .payment-item .when { font-size: 9px; color: #aaa; letter-spacing: 1px; text-transform: uppercase; margin-top: 4px; display: block; }
+  .terms-list { list-style: none; }
+  .terms-list li { font-size: 11px; color: #555; padding: 6px 0; padding-left: 14px; position: relative; border-bottom: 1px solid #f5f5f5; line-height: 1.5; }
+  .terms-list li::before { content: '·'; position: absolute; left: 0; color: #D4AF37; font-weight: bold; }
+  .footer-strip { position: absolute; bottom: 0; left: 0; right: 0; background: #1a1a1a; padding: 14px 55px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-strip .fs-name { font-size: 10px; color: #D4AF37; letter-spacing: 2px; text-transform: uppercase; }
+  .footer-strip .fs-contact { font-size: 10px; color: #888; letter-spacing: 1px; }
+  @media print { body { margin: 0; } .page { margin: 0; } }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-content">
+      <div class="cover-logo-text">Pawan Studio</div>
+      <div class="cover-sub">Ps Wedding Stories · Since 1990s</div>
+      <div class="cover-divider"></div>
+      <div class="cover-pkg-label">Wedding Package</div>
+      <div class="cover-pkg-name">ROYAL</div>
+      <div class="cover-price">₹ 1,00,000</div>
+      <div class="cover-badge">Most Popular</div>
+      <div class="cover-divider2"></div>
+      <div class="cover-tagline">"Every frame tells your story"</div>
+      <div class="cover-contact">
+        +91 8382905455 &nbsp;·&nbsp; pawanstudio.shop<br>
+        Belwai Kadipur, Sultanpur, UP
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: COVERAGE -->
+<div class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div class="content-header-left">
+        <div class="studio-name">Pawan Studio</div>
+        <div class="studio-sub">Ps Wedding Stories</div>
+      </div>
+      <div class="content-header-right">
+        +91 8382905455<br>
+        pawanstudio.shop<br>
+        @PsWeddingStories
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="section-label">Package</div>
+      <div class="section-title-big">Royal Wedding Package</div>
+      <div class="section-price">₹ 1,00,000</div>
+      <div class="section-duration">2–3 Days · Team of 6–7</div>
+    </div>
+
+    <div class="highlight-box">
+      <p>Our most popular package for couples who want pre-wedding memories, complete wedding day coverage and a premium cinematic film. Includes drone, haldi and multiple albums.</p>
+    </div>
+
+    <div class="gold-line"></div>
+
+    <div class="section-block">
+      <div class="col-label">Events Covered</div>
+      <div class="event-grid">
+        <div class="event-box">
+          <span class="ev-name">Pre-Wedding</span>
+          <span class="ev-detail">1 Day · 2–3 Locations</span>
+        </div>
+        <div class="event-box">
+          <span class="ev-name">Haldi</span>
+          <span class="ev-detail">Photo + Video</span>
+        </div>
+        <div class="event-box">
+          <span class="ev-name">Wedding Day</span>
+          <span class="ev-detail">Full Day Coverage</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gold-line"></div>
+
+    <div class="two-col">
+      <div>
+        <div class="col-label">Coverage Team</div>
+        <ul class="item-list">
+          <li>2 Photographers — Candid + Traditional</li>
+          <li>2 Videographers — HD + 4K</li>
+          <li>1 Drone Operator</li>
+          <li>1–2 Assistants</li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-label">Deliverables</div>
+        <ul class="item-list">
+          <li>500+ Fully Edited Photos</li>
+          <li>5–8 Min Cinematic Film</li>
+          <li>2–3 Min Pre-Wedding Film</li>
+          <li>Traditional Video — 30–45 Min</li>
+          <li>Drone Aerial Coverage</li>
+          <li>3–4 Instagram Reels</li>
+          <li>1 Main Album — 30 Pages</li>
+          <li>2 Parent Albums</li>
+          <li>1 Canvas Print — 16x24</li>
+          <li>Soft Copy — 32GB Pendrive + Cloud</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gold-line"></div>
+
+    <div class="section-block">
+      <div class="col-label">Delivery Timeline</div>
+      <ul class="item-list">
+        <li>Sneak Peek Photos — 24 to 48 Hours</li>
+        <li>Full Edited Photos — 30 to 45 Days</li>
+        <li>Teaser / Reels — 2 to 4 Weeks</li>
+        <li>Cinematic Film — 4 to 6 Weeks</li>
+        <li>Album — 45 to 75 Days</li>
+      </ul>
+    </div>
+
+    <div class="footer-strip">
+      <span class="fs-name">Pawan Studio · Royal Package</span>
+      <span class="fs-contact">+91 8382905455 · pawanstudio.shop</span>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3: PAYMENT + TERMS -->
+<div class="page">
+  <div class="content-page">
+    <div class="content-header">
+      <div class="content-header-left">
+        <div class="studio-name">Pawan Studio</div>
+        <div class="studio-sub">Ps Wedding Stories</div>
+      </div>
+      <div class="content-header-right">
+        +91 8382905455<br>
+        pawanstudio.shop<br>
+        @PsWeddingStories
+      </div>
+    </div>
+
+    <div class="section-block">
+      <div class="col-label">Payment Structure</div>
+      <div class="payment-grid">
+        <div class="payment-item">
+          <span class="pct">40%</span>
+          <span class="when">Advance<br>At Booking</span>
+        </div>
+        <div class="payment-item">
+          <span class="pct">30%</span>
+          <span class="when">Before<br>Event</span>
+        </div>
+        <div class="payment-item">
+          <span class="pct">30%</span>
+          <span class="when">On<br>Event Day</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gold-line"></div>
+
+    <div class="two-col">
+      <div>
+        <div class="col-label">Terms & Notes</div>
+        <ul class="terms-list">
+          <li>Travel within 50 km of Sultanpur included</li>
+          <li>Outstation travel and stay to be arranged by client</li>
+          <li>Team meals during events arranged by client</li>
+          <li>RAW files not included in standard delivery</li>
+          <li>Drone subject to permissions and weather</li>
+          <li>Final edit follows our creative direction</li>
+          <li>Data backup for 30 days after delivery</li>
+          <li>Work may be used in our portfolio unless notified</li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-label">Cancellation Policy</div>
+        <ul class="terms-list">
+          <li>30+ days before — 70% refund</li>
+          <li>15 to 30 days before — 50% refund</li>
+          <li>Less than 15 days — No refund</li>
+          <li>Date change — Free, subject to availability</li>
+        </ul>
+
+        <div class="col-label" style="margin-top: 24px;">Payment Modes</div>
+        <ul class="terms-list">
+          <li>Cash</li>
+          <li>UPI — 8382905455</li>
+          <li>Bank Transfer — on request</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gold-line"></div>
+
+    <div class="highlight-box">
+      <p>To confirm your booking, please reach out on WhatsApp or call us. We look forward to capturing your love story.</p>
+    </div>
+
+    <div class="section-block" style="text-align: center; margin-top: 10px;">
+      <div style="font-size: 18px; font-weight: bold; color: #1a1a1a; letter-spacing: 2px;">PAWAN STUDIO</div>
+      <div style="font-size: 10px; color: #888; letter-spacing: 2px; margin-top: 5px; text-transform: uppercase;">Ps Wedding Stories · Belwai Kadipur, Sultanpur, UP</div>
+      <div style="font-size: 11px; color: #B22222; margin-top: 8px; letter-spacing: 1px;">+91 8382905455 · pawanstudio.shop · @PsWeddingStories</div>
+    </div>
+
+    <div class="footer-strip">
+      <span class="fs-name">Pawan Studio · Royal Package</span>
+      <span class="fs-contact">+91 8382905455 · pawanstudio.shop</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
