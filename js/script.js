@@ -307,8 +307,6 @@ if (serviceCards.length > 0) {
   });
 }
 
-  });
-}
 
 // ========== BACK TO TOP BUTTON ==========
 const backToTop = document.getElementById('backToTop');
