@@ -698,23 +698,50 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+// ========== FOOTER YEAR AUTO UPDATE ==========
+var yearEl = document.getElementById('footerYear');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+// ========== TOGGLE OTHER SERVICE FIELD ==========
+function toggleOtherField(el) {
+  var otherGroup = document.getElementById('otherServiceGroup');
+  if (el.value === 'other') {
+    otherGroup.style.display = 'block';
+  } else {
+    otherGroup.style.display = 'none';
+  }
+}
+
 // ========== CONTACT FORM - WHATSAPP SUBMIT ==========
 function submitToWhatsApp(e) {
   e.preventDefault();
   var name = document.getElementById('name').value;
   var phone = document.getElementById('phone').value;
   var service = document.getElementById('service').value;
+  var otherService = document.getElementById('otherService').value;
+  var eventDate = document.getElementById('eventDate').value;
   var message = document.getElementById('message').value;
-  var text = 'Hello Pawan Studio!'
+
+  if (service === 'other' && otherService) {
+    service = otherService;
+  }
+
+  var text = 'Namaste Pawan Studio!'
+    + '%0A%0A*Client Details:*'
     + '%0AName: ' + name
     + '%0APhone: ' + phone
-    + '%0AService: ' + service
-    + '%0AMessage: ' + message;
-  window.open('https://wa.me/918382905455?text=' + text, '_blank');
-}
+    + '%0AService: ' + service;
 
-// ========== FOOTER YEAR AUTO UPDATE ==========
-var yearEl = document.getElementById('footerYear');
-if (yearEl) {
-  yearEl.textContent = new Date().getFullYear();
+  if (eventDate) {
+    text = text + '%0AEvent Date: ' + eventDate;
+  }
+  if (message) {
+    text = text + '%0AMessage: ' + message;
+  }
+
+  text = text + '%0A%0ASent from pawanstudio.shop';
+
+  window.open('https://wa.me/918382905455?text=' + text, '_blank');
 }
