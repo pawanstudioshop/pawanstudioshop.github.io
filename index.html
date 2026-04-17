@@ -1016,46 +1016,63 @@
         </div>
 
         <div class="contact-form-box" data-aos="fade-left">
-          <h3>Send Us a Message</h3>
+          <h3>Get Your Quotation</h3>
           <form id="contactForm" onsubmit="submitToWhatsApp(event)">
             
             <div class="form-group">
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Enter your name">
+              <label for="name">Aapka Naam *</label>
+              <input type="text" id="name" name="name" required placeholder="Aapka poora naam">
             </div>
 
             <div class="form-group">
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+              <label for="phone">WhatsApp Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="9876543210">
             </div>
 
             <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com">
+              <label for="service">Kya Chahiye? *</label>
+              <select id="service" name="service" required onchange="toggleOtherField(this)">
+                <option value="">-- Select --</option>
+                <option value="Classic Package (50K)">Classic Package (50,000)</option>
+                <option value="Royal Package (1 Lakh)">Royal Package (1,00,000)</option>
+                <option value="Grand Royal Package (1.5 Lakh)">Grand Royal Package (1,50,000)</option>
+                <option value="Signature Package (3L-10L)">Signature Package (3L-10L)</option>
+                <option value="other">Other (Birthday/School/Event)</option>
+              </select>
             </div>
 
-            <div class="form-group">
-              <label for="service">Service Required *</label>
-              <select id="service" name="service" required>
-                <option value="">Select Service</option>
-                <option value="wedding">Wedding Photography</option>
-                <option value="prewedding">Pre-Wedding Shoot</option>
-                <option value="birthday">Birthday Party</option>
-                <option value="event">School/College Event</option>
-                <option value="cultural">Cultural Program</option>
-                <option value="drone">Drone Shoot</option>
-                <option value="other">Other</option>
+            <div class="form-group" id="otherServiceGroup" style="display:none;">
+              <label for="otherService">Event Type Batayein *</label>
+              <select id="otherService" name="otherService">
+                <option value="">-- Select --</option>
+                <option value="Birthday Party">Birthday Party</option>
+                <option value="School/College Event">School / College Event</option>
+                <option value="Cultural Program">Cultural Program / Kavi Sammelan</option>
+                <option value="Corporate Event">Corporate Event</option>
+                <option value="Pre-Wedding Only">Pre-Wedding Shoot Only</option>
+                <option value="Drone Shoot Only">Drone Shoot Only</option>
+                <option value="Live Streaming">Live Streaming</option>
+                <option value="Custom">Something Else</option>
               </select>
             </div>
 
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us about your event..."></textarea>
+              <label for="eventDate">Event Date (Approx)</label>
+              <input type="date" id="eventDate" name="eventDate">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Kuch Extra Batana Hai?</label>
+              <textarea id="message" name="message" placeholder="Location, guests, special request..."></textarea>
             </div>
 
             <button type="submit" class="submit-btn">
-              📩 Send Message
+              💬 WhatsApp Pe Bhejo
             </button>
+
+            <p style="text-align:center; margin-top:12px; font-size:0.78rem; color:var(--gray-text);">
+              Submit karte hi WhatsApp open hoga with your details
+            </p>
 
           </form>
         </div>
