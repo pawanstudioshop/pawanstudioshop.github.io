@@ -2612,3 +2612,73 @@ section[id] {
     font-size: 1rem;
   }
 }
+
+/* ==================== TERMS SECTION ==================== */
+.terms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.terms-card {
+  background: var(--dark-secondary);
+  border-radius: 16px;
+  padding: 25px 22px;
+  border: 1px solid rgba(255,215,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.terms-card:hover {
+  border-color: rgba(255,215,0,0.35);
+  transform: translateY(-4px);
+}
+
+.terms-icon {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.terms-card h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+.terms-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.terms-card ul li {
+  font-size: 0.83rem;
+  color: var(--gray-text);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.terms-card ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--primary-red);
+  font-size: 0.7rem;
+  top: 2px;
+}
+
+@media (max-width: 768px) {
+  .terms-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+  .terms-card {
+    padding: 20px 18px;
+  }
+}
