@@ -2754,3 +2754,9 @@ section[id] {
     padding: 7px 12px;
   }
 }
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}

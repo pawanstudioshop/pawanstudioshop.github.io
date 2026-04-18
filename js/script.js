@@ -767,3 +767,35 @@ function submitToWhatsAppDirect() {
   var url = 'https://api.whatsapp.com/send?phone=918382905455&text=' + encodeURIComponent(text);
   window.location.href = url;
 }
+
+// Disable right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable F12, Ctrl+Shift+I, Ctrl+U
+document.addEventListener('keydown', function(e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.key === "u")
+  ) {
+    e.preventDefault();
+  }
+});
+
+// Disable right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+// Disable F12, Ctrl+Shift+I, Ctrl+U
+document.addEventListener('keydown', function(e) {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && e.key === "I") ||
+    (e.ctrlKey && e.key === "u")
+  ) {
+    e.preventDefault();
+  }
+});
