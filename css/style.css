@@ -2760,3 +2760,865 @@ img {
   -webkit-user-drag: none;
   pointer-events: none;
 }
+
+/* ==================== HERO + TRUST STRIP COMPACT FIX ==================== */
+.hero {
+  min-height: auto;
+  padding: 130px 20px 48px;
+}
+
+.hero-content {
+  max-width: 980px;
+}
+
+.hero-subtitle {
+  margin-bottom: 14px;
+}
+
+.hero-tagline {
+  margin-bottom: 28px;
+}
+
+.hero-buttons {
+  gap: 14px;
+  margin-bottom: 0;
+}
+
+.btn {
+  padding: 15px 28px;
+  font-size: 0.96rem;
+}
+
+.trust-strip {
+  padding: 12px 16px;
+}
+
+.trust-items {
+  gap: 16px 26px;
+}
+
+.trust-item {
+  gap: 6px;
+}
+
+.trust-text {
+  font-size: 0.78rem;
+}
+
+.trust-icon {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 112px 16px 32px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-tagline {
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 13px 20px;
+    font-size: 0.9rem;
+  }
+
+  .trust-strip {
+    padding: 10px 12px;
+  }
+
+  .trust-items {
+    gap: 10px 16px;
+  }
+
+  .trust-text {
+    font-size: 0.68rem;
+  }
+
+  .trust-icon {
+    font-size: 0.9rem;
+  }
+}
+
+/* ==================== HIDE HERO SCROLL INDICATOR ==================== */
+.scroll-indicator {
+  display: none !important;
+}
+
+/* ==================== LOGO SHINE ANIMATION ==================== */
+.logo-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-wrapper {
+  position: relative;
+  overflow: visible;
+}
+
+.logo-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.15),
+    rgba(255, 215, 0, 0.3),
+    rgba(255, 215, 0, 0.15),
+    transparent
+  );
+  animation: logoShine 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes logoShine {
+  0% { left: -100%; }
+  20% { left: 120%; }
+  100% { left: 120%; }
+}
+
+/* ==================== LOGO ANIMATION FIX ==================== */
+.logo-wrapper::after {
+  display: none !important;
+  content: none !important;
+}
+
+.logo-img {
+  animation: logoPulse 3.8s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.35);
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 6px 28px rgba(255, 215, 0, 0.55);
+  }
+}
+
+/* ==================== VIEW PACKAGES BUTTON PREMIUM ANIMATION ==================== */
+.hero-buttons .btn-primary {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-buttons .btn-primary::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -100%;
+  width: 100%;
+  height: calc(100% + 4px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 215, 0, 0.5),
+    transparent
+  );
+  animation: btnShimmer 3s ease-in-out infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@keyframes btnShimmer {
+  0% { left: -100%; }
+  40% { left: 120%; }
+  100% { left: 120%; }
+}
+
+.hero-buttons .btn-primary {
+  animation: btnGlow 3s ease-in-out infinite;
+}
+
+@keyframes btnGlow {
+  0%, 100% {
+    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(255, 215, 0, 0.5), 0 0 15px rgba(255, 215, 0, 0.2);
+  }
+}
+
+/* ==================== HERO CTA CLEAN PREMIUM ANIMATION ==================== */
+.hero-buttons .btn-primary {
+  animation: none !important;
+}
+
+.hero-buttons .btn-primary::after {
+  display: none !important;
+  content: none !important;
+}
+
+.hero-buttons .btn-primary:first-child {
+  position: relative;
+  animation: heroCtaPulse 2.8s ease-in-out infinite !important;
+  box-shadow: 0 10px 28px rgba(230, 57, 70, 0.35);
+}
+
+.hero-buttons .btn-primary:first-child::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 60px;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  animation: heroCtaRing 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes heroCtaPulse {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 10px 28px rgba(230, 57, 70, 0.35);
+  }
+  50% {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 34px rgba(255, 215, 0, 0.28);
+  }
+}
+
+@keyframes heroCtaRing {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.08;
+    transform: scale(1.04);
+  }
+}
+
+/* ==================== PREMIUM PACKAGE CARD POLISH ==================== */
+.pricing-section .section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(241, 241, 241, 0.78);
+}
+
+.pricing-grid {
+  gap: 28px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.01) 100%), var(--dark-secondary);
+  border: 1px solid rgba(255, 215, 0, 0.12);
+  border-radius: 24px;
+  padding: 30px 24px 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+  opacity: 0.6;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.38);
+}
+
+.pricing-card.featured {
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  background: linear-gradient(180deg, rgba(255,215,0,0.05) 0%, rgba(255,255,255,0.015) 100%), var(--dark-secondary);
+  box-shadow: 0 22px 60px rgba(255, 215, 0, 0.12);
+}
+
+.pricing-card.signature-card {
+  background: linear-gradient(180deg, rgba(230,57,70,0.06) 0%, rgba(255,255,255,0.01) 100%), var(--dark-secondary);
+}
+
+.pkg-icon {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 14px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 215, 0, 0.16);
+  box-shadow: inset 0 0 18px rgba(255,255,255,0.03);
+}
+
+.pricing-card h3 {
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+.pricing-price {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.pricing-duration {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: rgba(241,241,241,0.55);
+  margin-bottom: 22px;
+}
+
+.pricing-features {
+  gap: 0;
+  margin-bottom: 22px;
+}
+
+.pricing-features li {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 11px 0 11px 18px;
+  font-size: 0.87rem;
+  color: rgba(241,241,241,0.88);
+  position: relative;
+}
+
+.pricing-features li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-gold);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  opacity: 0.9;
+}
+
+.pricing-features li.not-included {
+  color: rgba(170,170,170,0.7);
+}
+
+.pricing-features li.not-included::before {
+  background: rgba(255,255,255,0.2);
+}
+
+.pkg-download-btn {
+  margin-top: auto;
+  border-width: 1px;
+  min-height: 48px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.pricing-card .btn {
+  border-radius: 14px;
+}
+
+.pricing-badge {
+  top: 16px;
+  font-size: 0.64rem;
+  letter-spacing: 1.6px;
+  padding: 8px 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.22);
+}
+
+.comparison-wrapper {
+  margin-top: 18px;
+}
+
+.comparison-title {
+  font-size: 1.55rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
+}
+
+.comparison-scroll {
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.comparison-table {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.comparison-table tbody td,
+.comparison-table thead th {
+  vertical-align: middle;
+}
+
+.comparison-note {
+  margin-top: 14px;
+  color: rgba(241,241,241,0.54);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    gap: 18px;
+  }
+
+  .pricing-card {
+    border-radius: 18px;
+    padding: 24px 18px 18px;
+  }
+
+  .pkg-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .pricing-price {
+    font-size: 1.8rem;
+  }
+
+  .pricing-features li {
+    font-size: 0.82rem;
+    padding: 10px 0 10px 16px;
+  }
+
+  .pricing-features li::before {
+    top: 16px;
+  }
+
+  .pkg-download-btn {
+    min-height: 44px;
+  }
+}
+
+/* ==================== CONTACT SECTION PREMIUM POLISH ==================== */
+.contact-section .section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: rgba(241, 241, 241, 0.78);
+}
+
+.contact-container {
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-info-box,
+.contact-form-box,
+.map-container {
+  background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.01) 100%), var(--dark-secondary);
+  border: 1px solid rgba(255, 215, 0, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.25);
+}
+
+.contact-info-box,
+.contact-form-box {
+  padding: 28px 24px;
+}
+
+.contact-info-box h3,
+.contact-form-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.45rem;
+  margin-bottom: 18px;
+  color: var(--white);
+  letter-spacing: 0.3px;
+}
+
+.contact-item {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 215, 0, 0.14);
+  font-size: 1rem;
+}
+
+.contact-details strong {
+  display: block;
+  font-size: 0.92rem;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.contact-details p,
+.contact-details a {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: rgba(241,241,241,0.78);
+}
+
+.contact-form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: rgba(241,241,241,0.9);
+  letter-spacing: 0.2px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--white);
+  padding: 14px 15px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255,255,255,0.38);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: rgba(255,215,0,0.45);
+  box-shadow: 0 0 0 3px rgba(255,215,0,0.08);
+}
+
+.form-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.submit-btn {
+  border-radius: 14px;
+  min-height: 50px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+}
+
+.map-container {
+  overflow: hidden;
+  min-height: 360px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  border: 0;
+  display: block;
+  filter: grayscale(0.1) contrast(1.02);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    gap: 18px;
+  }
+
+  .contact-info-box,
+  .contact-form-box {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-info-box h3,
+  .contact-form-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+  }
+
+  .contact-item {
+    padding: 14px 0;
+  }
+
+  .contact-icon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    font-size: 0.92rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 13px 14px;
+    font-size: 0.88rem;
+  }
+
+  .submit-btn {
+    min-height: 46px;
+  }
+
+  .map-container,
+  .map-container iframe {
+    min-height: 280px;
+  }
+}
+
+/* ==================== TYPOGRAPHY + SECTION TITLE PREMIUM POLISH ==================== */
+.section {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 42px;
+  padding: 0 18px;
+}
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  line-height: 1.15;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.section-title .divider {
+  width: 74px;
+  height: 2px;
+  margin: 0 auto 18px;
+  background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+  border-radius: 99px;
+}
+
+.section-title p {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: rgba(241, 241, 241, 0.72);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.brand-subline {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.82rem;
+  color: rgba(255, 215, 0, 0.72);
+  letter-spacing: 0.5px;
+}
+
+.about-text h3,
+.comparison-title,
+.contact-info-box h3,
+.contact-form-box h3,
+.faq-section .section-title h2,
+.terms-section .section-title h2,
+.testimonials-section .section-title h2,
+.pricing-section .section-title h2,
+.video-gallery-section .section-title h2,
+.portfolio-section .section-title h2 {
+  text-wrap: balance;
+}
+
+.about-text p,
+.testimonial-text,
+.faq-answer p,
+.comparison-note,
+.contact-details p {
+  line-height: 1.8;
+}
+
+.testimonial-text {
+  color: rgba(241,241,241,0.82);
+}
+
+.faq-question span:first-child {
+  line-height: 1.5;
+}
+
+.review-cta h2 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.3px;
+}
+
+.footer-content p {
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.7rem, 7vw, 2.3rem);
+    margin-bottom: 10px;
+  }
+
+  .section-title .divider {
+    width: 58px;
+    margin-bottom: 14px;
+  }
+
+  .section-title p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .brand-subline {
+    font-size: 0.75rem;
+  }
+}
+
+/* ==================== ABOUT TO WORK SPACING FIX ==================== */
+.about-section {
+  padding-bottom: 52px !important;
+}
+
+.portfolio-section {
+  padding-top: 52px !important;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding-bottom: 36px !important;
+  }
+
+  .portfolio-section {
+    padding-top: 36px !important;
+  }
+}
+
+/* ==================== WORK TO FEATURED FILMS SPACING FIX ==================== */
+.portfolio-section {
+  padding-bottom: 52px !important;
+}
+
+.video-gallery-section {
+  padding-top: 52px !important;
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding-bottom: 36px !important;
+  }
+
+  .video-gallery-section {
+    padding-top: 36px !important;
+  }
+}
+
+/* ==================== VIDEOS TO PACKAGES SPACING FIX ==================== */
+.video-gallery-section {
+  padding-bottom: 52px !important;
+}
+
+.pricing-section {
+  padding-top: 52px !important;
+}
+
+@media (max-width: 768px) {
+  .video-gallery-section {
+    padding-bottom: 36px !important;
+  }
+
+  .pricing-section {
+    padding-top: 36px !important;
+  }
+}
+
+/* ==================== GLOBAL SECTION SPACING TIGHT FIX ==================== */
+.about-section,
+.portfolio-section,
+.video-gallery-section,
+.pricing-section,
+.testimonials-section,
+.terms-section,
+.faq-section,
+.review-cta,
+.contact-section {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+.section-title {
+  margin-bottom: 28px !important;
+}
+
+@media (max-width: 768px) {
+  .about-section,
+  .portfolio-section,
+  .video-gallery-section,
+  .pricing-section,
+  .testimonials-section,
+  .terms-section,
+  .faq-section,
+  .review-cta,
+  .contact-section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .section-title {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* ==================== CONTACT TITLE GAP FIX ==================== */
+.contact-section .section-title {
+  margin-bottom: 16px !important;
+}
+
+.contact-section .section-title p {
+  margin-bottom: 0 !important;
+}
+
+.contact-container {
+  margin-top: 0 !important;
+  gap: 18px !important;
+}
+
+@media (max-width: 768px) {
+  .contact-section .section-title {
+    margin-bottom: 12px !important;
+  }
+
+  .contact-container {
+    gap: 14px !important;
+  }
+}

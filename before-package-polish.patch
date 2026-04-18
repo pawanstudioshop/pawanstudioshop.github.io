@@ -1,0 +1,283 @@
+diff --git a/css/style.css b/css/style.css
+index c1f9f68..41bf878 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -2760,3 +2760,246 @@ img {
+   -webkit-user-drag: none;
+   pointer-events: none;
+ }
++
++/* ==================== HERO + TRUST STRIP COMPACT FIX ==================== */
++.hero {
++  min-height: auto;
++  padding: 130px 20px 48px;
++}
++
++.hero-content {
++  max-width: 980px;
++}
++
++.hero-subtitle {
++  margin-bottom: 14px;
++}
++
++.hero-tagline {
++  margin-bottom: 28px;
++}
++
++.hero-buttons {
++  gap: 14px;
++  margin-bottom: 0;
++}
++
++.btn {
++  padding: 15px 28px;
++  font-size: 0.96rem;
++}
++
++.trust-strip {
++  padding: 12px 16px;
++}
++
++.trust-items {
++  gap: 16px 26px;
++}
++
++.trust-item {
++  gap: 6px;
++}
++
++.trust-text {
++  font-size: 0.78rem;
++}
++
++.trust-icon {
++  font-size: 1rem;
++}
++
++@media (max-width: 768px) {
++  .hero {
++    padding: 112px 16px 32px;
++  }
++
++  .hero-subtitle {
++    margin-bottom: 10px;
++    letter-spacing: 1.5px;
++  }
++
++  .hero-tagline {
++    margin-bottom: 20px;
++  }
++
++  .hero-buttons {
++    gap: 10px;
++  }
++
++  .btn {
++    padding: 13px 20px;
++    font-size: 0.9rem;
++  }
++
++  .trust-strip {
++    padding: 10px 12px;
++  }
++
++  .trust-items {
++    gap: 10px 16px;
++  }
++
++  .trust-text {
++    font-size: 0.68rem;
++  }
++
++  .trust-icon {
++    font-size: 0.9rem;
++  }
++}
++
++/* ==================== HIDE HERO SCROLL INDICATOR ==================== */
++.scroll-indicator {
++  display: none !important;
++}
++
++/* ==================== LOGO SHINE ANIMATION ==================== */
++.logo-img {
++  position: relative;
++  overflow: hidden;
++}
++
++.logo-wrapper {
++  position: relative;
++  overflow: visible;
++}
++
++.logo-wrapper::after {
++  content: '';
++  position: absolute;
++  top: 0;
++  left: -100%;
++  width: 60%;
++  height: 100%;
++  background: linear-gradient(
++    90deg,
++    transparent,
++    rgba(255, 215, 0, 0.15),
++    rgba(255, 215, 0, 0.3),
++    rgba(255, 215, 0, 0.15),
++    transparent
++  );
++  animation: logoShine 5s ease-in-out infinite;
++  pointer-events: none;
++  z-index: 2;
++}
++
++@keyframes logoShine {
++  0% { left: -100%; }
++  20% { left: 120%; }
++  100% { left: 120%; }
++}
++
++/* ==================== LOGO ANIMATION FIX ==================== */
++.logo-wrapper::after {
++  display: none !important;
++  content: none !important;
++}
++
++.logo-img {
++  animation: logoPulse 3.8s ease-in-out infinite;
++}
++
++@keyframes logoPulse {
++  0%, 100% {
++    transform: scale(1);
++    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.35);
++  }
++  50% {
++    transform: scale(1.04);
++    box-shadow: 0 6px 28px rgba(255, 215, 0, 0.55);
++  }
++}
++
++/* ==================== VIEW PACKAGES BUTTON PREMIUM ANIMATION ==================== */
++.hero-buttons .btn-primary {
++  position: relative;
++  overflow: hidden;
++  z-index: 1;
++}
++
++.hero-buttons .btn-primary::after {
++  content: '';
++  position: absolute;
++  top: -2px;
++  left: -100%;
++  width: 100%;
++  height: calc(100% + 4px);
++  background: linear-gradient(
++    90deg,
++    transparent,
++    rgba(255, 215, 0, 0.5),
++    transparent
++  );
++  animation: btnShimmer 3s ease-in-out infinite;
++  z-index: -1;
++  pointer-events: none;
++}
++
++@keyframes btnShimmer {
++  0% { left: -100%; }
++  40% { left: 120%; }
++  100% { left: 120%; }
++}
++
++.hero-buttons .btn-primary {
++  animation: btnGlow 3s ease-in-out infinite;
++}
++
++@keyframes btnGlow {
++  0%, 100% {
++    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.4);
++  }
++  50% {
++    box-shadow: 0 8px 35px rgba(255, 215, 0, 0.5), 0 0 15px rgba(255, 215, 0, 0.2);
++  }
++}
++
++/* ==================== HERO CTA CLEAN PREMIUM ANIMATION ==================== */
++.hero-buttons .btn-primary {
++  animation: none !important;
++}
++
++.hero-buttons .btn-primary::after {
++  display: none !important;
++  content: none !important;
++}
++
++.hero-buttons .btn-primary:first-child {
++  position: relative;
++  animation: heroCtaPulse 2.8s ease-in-out infinite !important;
++  box-shadow: 0 10px 28px rgba(230, 57, 70, 0.35);
++}
++
++.hero-buttons .btn-primary:first-child::before {
++  content: '';
++  position: absolute;
++  inset: -4px;
++  border-radius: 60px;
++  border: 1px solid rgba(255, 215, 0, 0.35);
++  animation: heroCtaRing 2.8s ease-in-out infinite;
++  pointer-events: none;
++}
++
++@keyframes heroCtaPulse {
++  0%, 100% {
++    transform: translateY(0);
++    box-shadow: 0 10px 28px rgba(230, 57, 70, 0.35);
++  }
++  50% {
++    transform: translateY(-2px);
++    box-shadow: 0 12px 34px rgba(255, 215, 0, 0.28);
++  }
++}
++
++@keyframes heroCtaRing {
++  0%, 100% {
++    opacity: 0.35;
++    transform: scale(1);
++  }
++  50% {
++    opacity: 0.08;
++    transform: scale(1.04);
++  }
++}
+diff --git a/index.html b/index.html
+index b0a7ac5..4f1517b 100644
+--- a/index.html
++++ b/index.html
+@@ -236,23 +236,19 @@
+       <div class="trust-items">
+         <div class="trust-item">
+           <span class="trust-icon">🏆</span>
+-          <span class="trust-text">30+ Years Experience</span>
++          <span class="trust-text">30+ Years of Experience</span>
+         </div>
+         <div class="trust-item">
+           <span class="trust-icon">💍</span>
+-          <span class="trust-text">5,000+ Happy Clients</span>
++          <span class="trust-text">Trusted by 5,000+ Families</span>
+         </div>
+         <div class="trust-item">
+           <span class="trust-icon">🎥</span>
+-          <span class="trust-text">4K Cinematic + Drone</span>
++          <span class="trust-text">4K Films + Drone Coverage</span>
+         </div>
+         <div class="trust-item">
+           <span class="trust-icon">📍</span>
+-          <span class="trust-text">Sultanpur · Varanasi · Lucknow</span>
+-        </div>
+-        <div class="trust-item">
+-          <span class="trust-icon">📦</span>
+-          <span class="trust-text">Packages from ₹50,000</span>
++          <span class="trust-text">Serving Weddings Across India</span>
+         </div>
+       </div>
+     </section>
