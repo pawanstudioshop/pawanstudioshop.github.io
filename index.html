@@ -1160,5 +1160,39 @@
   <!-- Custom JavaScript -->
   <script src="js/script.js"></script>
 
+
+  <!-- ==================== DOWNLOAD GATE POPUP ==================== -->
+  <div id="downloadGate" class="download-modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeDownloadGate()">&times;</span>
+      <h3>Download Quotation</h3>
+      <p>Please enter your details to receive the full package details.</p>
+      
+      <form id="leadForm" onsubmit="handleLeadSubmit(event)">
+        <input type="hidden" id="selectedPdf" value="">
+        <input type="hidden" id="selectedPackage" value="">
+        
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" id="leadName" required placeholder="Aapka Naam">
+        </div>
+        
+        <div class="form-group">
+          <label>WhatsApp Number *</label>
+          <input type="tel" id="leadPhone" required pattern="[0-9]{10}" placeholder="10 Digit Number">
+        </div>
+        
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="leadEmail" required placeholder="Your Email">
+        </div>
+        
+        <button type="submit" id="submitLeadBtn" class="btn btn-primary" style="width:100%;">
+          Submit & Download PDF
+        </button>
+      </form>
+    </div>
+  </div>
+
 </body>
 </html>
