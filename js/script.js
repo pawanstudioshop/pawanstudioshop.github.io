@@ -801,7 +801,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ========== DOWNLOAD LEAD CAPTURE LOGIC ==========
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyOULjgKhgz6pOEp7KiRmee-x_j3Qf64ICKr7jzOg3FpgR1rD4qusAXsKphNPs26Tv3/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbze1IrlzcDA4WsrLzoswetEUPavuz350MUBKuxtgcpRQKjWCiCkh0wkTAKJP2aRky1nyw/exec';
 
 // Intercept Download Buttons
 document.addEventListener('click', function(e) {
