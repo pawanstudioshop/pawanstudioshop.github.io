@@ -801,7 +801,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ========== DOWNLOAD LEAD CAPTURE LOGIC ==========
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyOULjgKhgz6pOEp7KiRmee-x_j3Qf64ICKr7jzOg3FpgR1rD4qusAXsKphNPs26Tv3/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbymg4pz_n34dEpZz8BGOIu9hK5s2YHomv_p5eXUq7oUejoQ43P6yswnKzrmT7JgJUD5/exec';
 
 // Intercept Download Buttons
 document.addEventListener('click', function(e) {
@@ -830,46 +830,46 @@ async function handleLeadSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitLeadBtn');
   const pdfUrl = document.getElementById('selectedPdf').value;
-  
-  const leadData = {
-    name: document.getElementById('leadName').value,
-    phone: document.getElementById('leadPhone').value,
-    email: document.getElementById('leadEmail').value,
-    package: document.getElementById('selectedPackage').value,
-    source: 'PDF Download'
-  };
+
+  const name = document.getElementById('leadName').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+  const pkg = document.getElementById('selectedPackage').value.trim();
 
   btn.disabled = true;
   btn.innerText = 'Processing...';
 
+  // Build URL with query params
+  const params = new URLSearchParams({
+    name: name,
+    phone: phone,
+    email: email,
+    package: pkg
+  });
+
+  const requestUrl = APPS_SCRIPT_URL + '?' + params.toString();
+
   try {
-    // Send to Google Sheets
-    await fetch(APPS_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors', // Essential for Apps Script
-      cache: 'no-cache',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(leadData)
-    });
+    // Use Image trick - most reliable for cross-origin
+    const img = new Image();
+    img.src = requestUrl;
 
-    // Start Download
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.download = '';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // Wait briefly then download
+    setTimeout(function() {
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = '';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      closeDownloadGate();
+      document.getElementById('leadForm').reset();
+      btn.disabled = false;
+      btn.innerText = 'Submit & Download PDF';
+    }, 1500);
 
-    // Close Modal
-    alert('Thank you! Your download has started.');
-    closeDownloadGate();
-    document.getElementById('leadForm').reset();
-    
   } catch (err) {
-    console.error('Error:', err);
-    alert('Something went wrong, but you can still download the PDF.');
     window.location.href = pdfUrl;
-  } finally {
     btn.disabled = false;
     btn.innerText = 'Submit & Download PDF';
   }
